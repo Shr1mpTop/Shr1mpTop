@@ -117,7 +117,7 @@
 </div>
 
   <!-- 添加动态贡献热图 -->
-  <img src="https://github-profile-trophy.vercel.app/?username=zyh3699&theme=radical&no-frame=true&row=1&column=7" width="100%" alt="GitHub 奖杯" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Shr1mpTop&theme=radical&no-frame=true&row=1&column=7" width="100%" alt="GitHub 奖杯" />
 </div>
 
 <!-- 项目展示部分 - 统一标题样式并对齐图标 -->
@@ -128,17 +128,17 @@
 </h2>
 
 <div align="center">
-  <a href="https://github.com/zyh3699/dream-maze">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=zyh3699&repo=dream-maze&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
+  <a href="https://github.com/Shr1mpTop/dream-maze">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=dream-maze&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
   </a>
-  <a href="https://github.com/zyh3699/doctopus">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=zyh3699&repo=doctopus&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
+  <a href="https://github.com/Shr1mpTop/doctopus">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=doctopus&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
   </a>
 </div>
 
 <!-- 添加项目按钮 -->
 <div align="center">
-  <a href="https://github.com/zyh3699?tab=repositories">
+  <a href="https://github.com/Shr1mpTop?tab=repositories">
     <img src="https://img.shields.io/badge/更多项目-查看全部-%23FF5F6D?style=for-the-badge&logo=github" alt="查看更多项目" />
   </a>
 </div>
