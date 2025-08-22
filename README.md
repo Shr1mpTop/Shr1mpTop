@@ -132,8 +132,12 @@
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Gastrointestinal-Diagnosis-System&hide_border=true&title_color=FF5F6D" width="49%" />
   </a>
   <a href="https://github.com/2022ljz/Hackathon_TornPrivacy">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Hackathon_TornPrivacy&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=2022ljz&repo=Hackathon_TornPrivacy&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
   </a>
+  <a href="https://github.com/Shr1mpTop/SeekVest">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=SeekVest&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
+  </a>
+  
 </div>
 
 <!-- 添加项目按钮 -->
