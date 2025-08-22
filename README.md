@@ -84,7 +84,7 @@
 
 <div align="center">
   <!-- 使用更美观的动态技能图标 -->
-  <img src="https://skillicons.dev/icons?i=python,cpp,c,java,mysql,pytorch,tensorflow,mongodb,linux,matlab,html,css,js,git,vscode,latex,github,docker&perline=9" />
+  <img src="https://skillicons.dev/icons?i=python,c,mysql,pytorch,tensorflow,linux,matlab,html,css,js,git,vscode,latex,github&perline=7" />
 
   <!-- 添加技能动画卡片 - 改进布局 -->
 
@@ -129,10 +129,7 @@
 
 <div align="center">
   <a href="https://github.com/Shr1mpTop/Gastrointestinal-Diagnosis-System">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Gastrointestinal-Diagnosis-System&hide_border=true&title_color=FF5F6D" width="49%" />
-  </a>
-  <a href="https://github.com/2022ljz/Hackathon_TornPrivacy">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=2022ljz&repo=Hackathon_TornPrivacy&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Gastrointestinal-Diagnosis-System&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
   </a>
   <a href="https://github.com/Shr1mpTop/SeekVest">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=SeekVest&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
