@@ -128,11 +128,11 @@
 </h2>
 
 <div align="center">
-  <a href="https://github.com/Shr1mpTop/dream-maze">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=dream-maze&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
+  <a href="https://github.com/Shr1mpTop/Gastrointestinal-Diagnosis-System">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Gastrointestinal-Diagnosis-System&hide_border=true&title_color=FF5F6D" width="49%" />
   </a>
-  <a href="https://github.com/Shr1mpTop/doctopus">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=doctopus&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
+  <a href="https://github.com/2022ljz/Hackathon_TornPrivacy">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Hackathon_TornPrivacy&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
   </a>
 </div>
 
@@ -184,38 +184,4 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=12&height=3" width="100%" />
 </div>
-<h2 id="许可协议" align="center">
-  <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30px" height="30px" style="vertical-align: middle; position: relative; top: -2px;"/>
-  许可协议
-</h2>
 
-
-
-
-  <p>您可以自由地：</p>
-  <ul style="list-style-type: none; padding: 0;">
-    <li>✅ 使用本模板创建个人 GitHub Profile</li>
-    <li>✅ 修改和定制以满足您的需求</li>
-    <li>✅ 分发您修改后的版本</li>
-  </ul>
-
-  <p>条件是：</p>
-  <ul style="list-style-type: none; padding: 0;">
-    <li>📝 保留原始版权声明</li>
-    <li>📝 不追究作者责任</li>
-  </ul>
-
-  <p>
-    <a href="https://opensource.org/licenses/MIT">
-      <img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="MIT License" />
-    </a>
-  </p>
-</div>
-
-<!-- 页脚 -->
-<p align="center">
-  <i>如果您觉得这个模板有帮助，请考虑给一个⭐️支持一下!</i> 
-</p>
-
-<!-- 添加波浪动画页脚 -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF5F6D,50:FF9671,100:FFC371&height=120&section=footer&animation=twinkling&fontAlignY=80" width="100%"/>
