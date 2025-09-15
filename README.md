@@ -99,13 +99,14 @@
       <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shr1mpTop&theme=radical" width="250" />
     </td>
     <td align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&layout=donut-vertical&theme=radical&cachebust=1" width="250" alt="语言使用分布" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&layout=donut-vertical&theme=radical&cachebust=1" width="200" alt="语言使用分布" />
     </td>
     <td align="center">
       <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shr1mpTop&theme=radical&cachebust=20250823" width="250" />
     </td>
   </tr>
 </table>
+
 
 
 
