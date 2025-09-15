@@ -51,37 +51,14 @@
   关于我
 </h2>
 
+| ⛓️ 区块链与分布式系统 | 🧠 深度学习与数据可视化 | 🎮 游戏开发与视觉创作 |
+|----------------------|------------------------|--------------------|
+| 🔗 **区块链底层协议设计** | 🔍 **计算机视觉与图像识别** | 🎮 **Unity 3D 游戏** |
+| ⛏️ **共识算法优化与实现** | 📝 **自然语言处理与文本分析** | 🎨 **3D 场景与角色建模** |
+| 💻 **智能合约与去中心化应用** | 🧮 **神经网络架构与训练策略** | ✂️ **视频剪辑与特效** |
+| 🔒 **区块链安全与隐私保护** | 📊 **高维数据可视化方案** | 🌌 **沉浸式游戏环境与关卡** |
+| 🌐 **跨链交互与分布式账本** | 🎨 **交互式数据仪表盘系统** | ✨ **视觉效果与动画融合** |
 
-
-<table border="0" cellspacing="0" cellpadding="8" width="100%" style="table-layout: fixed;">
-  <tr>
-    <!-- 三列平均分配宽度 -->
-    <td width="33.333%" valign="top" style="padding-right: 16px; box-sizing: border-box;">
-      <strong>⛓️ 区块链与分布式系统</strong><br>
-      🔗 专注于 <strong>区块链底层协议设计</strong><br>
-      ⛏️ 研究 <strong>共识算法优化与实现</strong><br>
-      💻 开发 <strong>智能合约与去中心化应用</strong><br>
-      🔒 实践 <strong>区块链安全与隐私保护</strong><br>
-      🌐 探索 <strong>跨链交互与分布式账本</strong>
-    </td>
-    <td width="33.333%" valign="top" style="padding: 0 8px; box-sizing: border-box;">
-      <strong>🧠 深度学习与数据可视化</strong><br>
-      🔍 钻研 <strong>计算机视觉与图像识别</strong><br>
-      📝 实现 <strong>自然语言处理与文本分析</strong><br>
-      🧮 优化 <strong>神经网络架构与训练策略</strong><br>
-      📊 设计 <strong>高维数据可视化</strong> 方案<br>
-      🎨 构建 <strong>交互式数据仪表盘</strong> 系统
-    </td>
-    <td width="33.333%" valign="top" style="padding-left: 16px; box-sizing: border-box;">
-      <strong>🎮 游戏开发与视觉创作</strong><br>
-      🎮 开发 <strong>Unity 3D 游戏</strong><br>
-      🎨 设计 <strong>3D 场景与角色建模</strong><br>
-      ✂️ 制作 <strong>视频剪辑与特效</strong><br>
-      🌌 构建 <strong>沉浸式游戏环境与关卡</strong><br>
-      ✨ 实现 <strong>视觉效果与动画</strong>融合
-    </td>
-  </tr>
-</table>
 <!-- 技能展示 - 统一标题样式并调整图标对齐 -->
 <h2 align="center">
   <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="30px" height="30px" style="vertical-align: middle; position: relative; top: -2px;"/>
