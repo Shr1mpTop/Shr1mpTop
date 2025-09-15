@@ -1,0 +1,84 @@
+name: 生成像素风格贡献日历
+on:
+  schedule:
+    - cron: "0 1 * * *"  # 每天凌晨1点自动更新
+  workflow_dispatch:     # 允许手动触发
+
+jobs:
+  generate-contribution-grid:
+    runs-on: ubuntu-latest
+    steps:
+      # 拉取仓库代码
+      - name:  checkout 代码
+        uses: actions/checkout@v4
+
+      # 设置Python环境（生成图表需要Python）
+      - name: 设置Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      # 安装生成工具依赖
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install matplotlib numpy requests python-dotenv
+
+      # 生成像素风格贡献日历
+      - name: 生成贡献日历SVG
+        run: |
+          # 创建输出目录
+          mkdir -p dist
+          
+          # 编写Python脚本生成日历
+          cat > generate_grid.py << 'EOF'
+          import os
+          import requests
+          import matplotlib.pyplot as plt
+          import numpy as np
+          from datetime import datetime, timedelta
+
+          # 获取GitHub贡献数据
+          username = os.getenv('GITHUB_USERNAME')
+          url = f"https://github-contributions-api.deno.dev/{username}.json"
+          response = requests.get(url)
+          contributions = response.json()
+
+          # 提取贡献数据并转换为矩阵
+          grid_data = []
+          week = []
+          for day in contributions['contributions']:
+              # 用贡献数决定颜色深度（0-4级）
+              count = min(4, day['count'])  # 限制最大等级为4
+              week.append(count)
+              if len(week) == 7:
+                  grid_data.append(week)
+                  week = []
+
+          # 转换为numpy数组
+          grid_array = np.array(grid_data)
+
+          # 创建像素风格图表
+          plt.figure(figsize=(12, 6))
+          cmap = plt.cm.viridis  # 可替换为其他配色：plasma, inferno, magma, cividis
+          plt.imshow(grid_array, cmap=cmap, aspect='auto', vmin=0, vmax=4)
+
+          # 隐藏坐标轴
+          plt.axis('off')
+
+          # 保存为SVG
+          plt.savefig('dist/contribution-grid.svg', bbox_inches='tight', pad_inches=0)
+          EOF
+          
+          # 运行生成脚本（传入用户名）
+          GITHUB_USERNAME=${{ github.repository_owner }} python generate_grid.py
+
+      # 将生成的文件推送到output分支
+      - name: 推送文件到仓库
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
