@@ -66,7 +66,7 @@
     </td>
     <td width="33.333%" valign="top" style="padding: 0 8px; box-sizing: border-box;">
       <strong>🧠 深度学习与数据可视化</strong><br>
-      🔍 钻研 <strong>计算机视觉与图像识别</strong> 技术<br>
+      🔍 钻研 <strong>计算机视觉与图像识别</strong><br>
       📝 实现 <strong>自然语言处理与文本分析</strong><br>
       🧮 优化 <strong>神经网络架构与训练策略</strong><br>
       📊 设计 <strong>高维数据可视化</strong> 方案<br>
