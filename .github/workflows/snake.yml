@@ -1,7 +1,8 @@
 name: 生成贡献蛇形动画
+
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * *" # 每天 0 点运行
   workflow_dispatch:
 
 permissions:
@@ -25,7 +26,6 @@ jobs:
       - name: 确保输出目录存在并设置权限
         run: |
           mkdir -p dist
-          # 关键：设置宽松权限，避免容器内权限问题
           chmod -R 777 dist
           echo "dist目录详情:"
           ls -ld dist
@@ -35,11 +35,9 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          args: >
-            --svg-out /github/workspace/dist/github-contribution-grid-snake.svg
-            --svg-out-dark /github/workspace/dist/github-contribution-grid-snake-dark.svg
-            --color-scheme radical
-            --debug  # 启用调试模式
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg
 
       - name: 详细检查生成结果
         run: |
@@ -48,14 +46,13 @@ jobs:
           echo "工作区完整目录结构:"
           ls -laR
           
-          # 检查文件是否存在
-          if [ -f "/github/workspace/dist/github-contribution-grid-snake.svg" ]; then
-            echo "文件生成成功!"
-            echo "文件大小: $(du -h /github/workspace/dist/github-contribution-grid-snake.svg)"
+          if [ -f "dist/github-contribution-grid-snake.svg" ]; then
+            echo "✅ 文件生成成功!"
+            echo "文件大小: $(du -h dist/github-contribution-grid-snake.svg)"
             echo "文件前10行内容:"
-            head -n 10 /github/workspace/dist/github-contribution-grid-snake.svg
+            head -n 10 dist/github-contribution-grid-snake.svg
           else
-            echo "错误: 文件未生成"
+            echo "❌ 错误: 文件未生成"
             exit 1
           fi
 
@@ -66,4 +63,3 @@ jobs:
           build_dir: dist
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
