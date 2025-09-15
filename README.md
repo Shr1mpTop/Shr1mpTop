@@ -55,7 +55,7 @@
 
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
 <tr>
-<td width="34%" valign="top">
+<td width="33%" valign="top">
 
 > ### ⛓️ 区块链与分布式系统
 >
@@ -66,7 +66,7 @@
 > 🌐 探索 **跨链交互与分布式账本解决方案**
 
 </td>
-<td width="34%" valign="top">
+<td width="33%" valign="top">
 
 > ### 🧠 深度学习与数据可视化
 >
@@ -78,7 +78,7 @@
 > 🎨 构建 **交互式数据仪表盘** 系统
 
 </td>
-<td width="35%" valign="top">
+<td width="33%" valign="top">
 
 > ### 🎮 游戏开发与视觉创作
 >
