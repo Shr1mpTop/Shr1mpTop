@@ -1,0 +1,35 @@
+name: Generate Commit Trajectory SVG
+
+on:
+  push:
+    branches: [main]   # 你主要开发的分支（一般是 main 或 master）
+  workflow_dispatch:   # 允许手动触发
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. 拉取仓库
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. 安装 Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 3. 安装依赖 & 构建 (如果你的项目有 package.json)
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build project
+        run: npm run build   # 这里要确保最终能生成 SVG 到 dist/ 或 public/
+
+      # 4. 部署到 gh-pages 分支
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist   # 构建产物目录 (你生成 SVG 的地方)
