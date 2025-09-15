@@ -1,137 +1,70 @@
-name: 生成多彩像素风格贡献日历
-on:
-  schedule:
-    - cron: "0 1 * * *"  # 每天凌晨1点自动更新
-  workflow_dispatch:     # 允许手动触发
-  push:
-    branches: [ main ]
+import os
+import requests
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+# 获取贡献数据
+username = os.getenv('GITHUB_USERNAME')
+url = f"https://github-contributions-api.deno.dev/{username}.json"
+response = requests.get(url)
+contributions = response.json()
 
-jobs:
-  generate-contribution-grid:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout 代码
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+# 解析贡献数据
+grid_data = []
+week = []
 
-      - name: 创建输出目录
-        run: mkdir -p dist
+if 'contributions' in contributions:
+    contribution_list = contributions['contributions']
+else:
+    contribution_list = contributions
 
-      - name: 设置Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.10"
+for item in contribution_list:
+    if isinstance(item, dict) and 'count' in item:
+        count = item['count']
+    elif isinstance(item, list) and len(item) > 0 and isinstance(item[0], dict) and 'count' in item[0]:
+        count = item[0]['count']
+    else:
+        count = 0
+    
+    count = min(4, max(0, count))  # 映射到 0-4
+    week.append(count)
+    
+    if len(week) == 7:
+        grid_data.append(week)
+        week = []
 
-      - name: 安装依赖
-        run: |
-          python -m pip install --upgrade pip
-          pip install matplotlib numpy requests python-dotenv Pillow
+# 处理最后一周的剩余天数
+if len(week) > 0:
+    while len(week) < 7:
+        week.append(0)
+    grid_data.append(week)
 
-      - name: 生成多彩贡献日历SVG
-        run: |
-          cat > generate_grid.py << 'EOF'
-          import os
-          import requests
-          import matplotlib.pyplot as plt
-          import numpy as np
-          from PIL import Image, ImageDraw
+# 定义颜色
+colors = [
+    "#f8f9fa",  # 0贡献
+    "#a8e6cf",  # 1
+    "#dcedc1",  # 2
+    "#ffaaa5",  # 3
+    "#ff8b94"   # 4+
+]
 
-          # 获取贡献数据
-          username = os.getenv('GITHUB_USERNAME')
-          url = f"https://github-contributions-api.deno.dev/{username}.json"
-          response = requests.get(url)
-          contributions = response.json()
+# SVG 参数
+pixel_size = 12
+rows = 7
+cols = len(grid_data)
+svg_width = cols * pixel_size
+svg_height = rows * pixel_size
 
-          # 解析贡献数据
-          grid_data = []
-          week = []
-          
-          if 'contributions' in contributions:
-              contribution_list = contributions['contributions']
-          else:
-              contribution_list = contributions
+# 生成 SVG
+svg_content = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{svg_width}" height="{svg_height}">']
 
-          for item in contribution_list:
-              if isinstance(item, dict) and 'count' in item:
-                  count = item['count']
-              elif isinstance(item, list) and len(item) > 0 and isinstance(item[0], dict) and 'count' in item[0]:
-                  count = item[0]['count']
-              else:
-                  count = 0
-                  
-              # 将贡献值映射到0-4的范围
-              count = min(4, max(0, count))
-              week.append(count)
-              
-              if len(week) == 7:
-                  grid_data.append(week)
-                  week = []
+for x, week in enumerate(grid_data):
+    for y, count in enumerate(week):
+        color = colors[count]
+        rect = f'<rect x="{x*pixel_size}" y="{y*pixel_size}" width="{pixel_size}" height="{pixel_size}" fill="{color}" stroke="#eaeaea" stroke-width="1"/>'
+        svg_content.append(rect)
 
-          # 处理最后一周的剩余天数
-          if len(week) > 0:
-              while len(week) < 7:
-                  week.append(0)
-              grid_data.append(week)
+svg_content.append("</svg>")
 
-          # 转换为numpy数组
-          grid_array = np.array(grid_data)
-          
-          # 创建多彩的颜色映射 - 使用更丰富的色彩范围
-          colors = [
-              "#f8f9fa",  # 0贡献 - 浅灰白
-              "#a8e6cf",  # 1贡献 - 浅绿色
-              "#dcedc1",  # 2贡献 - 黄绿色
-              "#ffaaa5",  # 3贡献 - 浅红色
-              "#ff8b94"   # 4+贡献 - 深红色
-          ]
-          
-          # 创建像素化效果的图像
-          pixel_size = 10  # 每个像素的大小
-          rows, cols = grid_array.shape
-          img_width = cols * pixel_size
-          img_height = rows * pixel_size
-          
-          # 创建图像
-          img = Image.new('RGB', (img_width, img_height), color=colors[0])
-          draw = ImageDraw.Draw(img)
-          
-          # 绘制每个像素
-          for y in range(rows):
-              for x in range(cols):
-                  count = grid_array[y, x]
-                  color = colors[count]
-                  # 绘制一个方块代表一个像素
-                  draw.rectangle(
-                      [x * pixel_size, y * pixel_size, 
-                       (x + 1) * pixel_size - 1, (y + 1) * pixel_size - 1],
-                      fill=color,
-                      outline="#eaeaea",  # 像素边框，增强像素感
-                      width=1
-                  )
-          
-          # 保存为PNG然后转换为SVG以保持像素效果
-          img.save('dist/contribution-grid.png')
-          
-          # 使用matplotlib创建SVG版本，保留像素风格
-          plt.figure(figsize=(cols * 0.2, rows * 0.2))
-          plt.imshow(img)
-          plt.axis('off')
-          plt.savefig('dist/contribution-grid.svg', bbox_inches='tight', pad_inches=0)
-          EOF
-          
-          GITHUB_USERNAME=${{ github.repository_owner }} python generate_grid.py
-
-      - name: 推送文件到仓库
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: output
-          build_dir: dist
-          commit_message: "Update colorful pixel contribution grid: ${{ github.sha }}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+# 保存文件
+os.makedirs("dist", exist_ok=True)
+with open("dist/contribution-grid.svg", "w") as f:
+    f.write("\n".join(svg_content))
