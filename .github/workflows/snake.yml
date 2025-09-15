@@ -4,28 +4,37 @@ on:
     - cron: "0 0 * * *"  # 每天凌晨自动更新
   workflow_dispatch:     # 允许手动触发更新
 
+# 权限配置
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   generate-snake:
     runs-on: ubuntu-latest
     steps:
-      # 步骤1：拉取代码仓库
+      # 拉取代码仓库
       - name: 拉取仓库
         uses: actions/checkout@v4
 
-      # 新增步骤：创建输出目录（解决Build dir不存在问题）
+      # 创建输出目录
       - name: 创建输出目录
         run: mkdir -p dist
 
-      # 步骤2：生成蛇形动画
+      # 生成蛇形动画（使用最新参数格式）
       - name: 生成蛇形SVG
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          svg_out_path: dist/github-contribution-grid-snake.svg
-          svg_out_dark_path: dist/github-contribution-grid-snake-dark.svg
-          color_scheme: "radical"
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # 新增必填参数
+          # 使用args参数统一配置输出路径和颜色
+          args: >
+            --svg-out dist/github-contribution-grid-snake.svg
+            --svg-out-dark dist/github-contribution-grid-snake-dark.svg
+            --color-scheme radical
 
-      # 步骤3：将生成的文件推回仓库
+      # 推送文件到仓库
       - name: 推送文件到仓库
         uses: crazy-max/ghaction-github-pages@v4
         with:
