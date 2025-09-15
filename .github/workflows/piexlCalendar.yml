@@ -1,70 +1,99 @@
-import os
-import requests
+name: 生成多彩像素风格贡献日历
 
-# 获取贡献数据
-username = os.getenv('GITHUB_USERNAME')
-url = f"https://github-contributions-api.deno.dev/{username}.json"
-response = requests.get(url)
-contributions = response.json()
+on:
+  schedule:
+    - cron: "0 1 * * *"   # 每天凌晨1点自动更新
+  workflow_dispatch:      # 允许手动触发
+  push:
+    branches: [ main ]    # main 分支有更新时也触发
 
-# 解析贡献数据
-grid_data = []
-week = []
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
-if 'contributions' in contributions:
-    contribution_list = contributions['contributions']
-else:
-    contribution_list = contributions
+jobs:
+  generate-contribution-grid:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 拉取仓库
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-for item in contribution_list:
-    if isinstance(item, dict) and 'count' in item:
-        count = item['count']
-    elif isinstance(item, list) and len(item) > 0 and isinstance(item[0], dict) and 'count' in item[0]:
-        count = item[0]['count']
-    else:
-        count = 0
-    
-    count = min(4, max(0, count))  # 映射到 0-4
-    week.append(count)
-    
-    if len(week) == 7:
-        grid_data.append(week)
-        week = []
+      - name: 创建输出目录
+        run: mkdir -p dist
 
-# 处理最后一周的剩余天数
-if len(week) > 0:
-    while len(week) < 7:
-        week.append(0)
-    grid_data.append(week)
+      - name: 设置 Python 环境
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
 
-# 定义颜色
-colors = [
-    "#f8f9fa",  # 0贡献
-    "#a8e6cf",  # 1
-    "#dcedc1",  # 2
-    "#ffaaa5",  # 3
-    "#ff8b94"   # 4+
-]
+      - name: 安装依赖
+        run: pip install requests
 
-# SVG 参数
-pixel_size = 12
-rows = 7
-cols = len(grid_data)
-svg_width = cols * pixel_size
-svg_height = rows * pixel_size
+      - name: 生成像素风格贡献日历 SVG
+        run: |
+          cat > generate_grid.py << 'EOF'
+          import os
+          import requests
 
-# 生成 SVG
-svg_content = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{svg_width}" height="{svg_height}">']
+          username = os.getenv('GITHUB_USERNAME')
+          url = f"https://github-contributions-api.deno.dev/{username}.json"
+          response = requests.get(url)
+          contributions = response.json()
 
-for x, week in enumerate(grid_data):
-    for y, count in enumerate(week):
-        color = colors[count]
-        rect = f'<rect x="{x*pixel_size}" y="{y*pixel_size}" width="{pixel_size}" height="{pixel_size}" fill="{color}" stroke="#eaeaea" stroke-width="1"/>'
-        svg_content.append(rect)
+          grid_data, week = [], []
+          if 'contributions' in contributions:
+              contribution_list = contributions['contributions']
+          else:
+              contribution_list = contributions
 
-svg_content.append("</svg>")
+          for item in contribution_list:
+              if isinstance(item, dict) and 'count' in item:
+                  count = item['count']
+              elif isinstance(item, list) and len(item) > 0 and isinstance(item[0], dict) and 'count' in item[0]:
+                  count = item[0]['count']
+              else:
+                  count = 0
 
-# 保存文件
-os.makedirs("dist", exist_ok=True)
-with open("dist/contribution-grid.svg", "w") as f:
-    f.write("\n".join(svg_content))
+              count = min(4, max(0, count))
+              week.append(count)
+              if len(week) == 7:
+                  grid_data.append(week)
+                  week = []
+
+          if len(week) > 0:
+              while len(week) < 7:
+                  week.append(0)
+              grid_data.append(week)
+
+          colors = ["#f8f9fa","#a8e6cf","#dcedc1","#ffaaa5","#ff8b94"]
+
+          pixel_size = 12
+          rows, cols = 7, len(grid_data)
+          svg_width, svg_height = cols * pixel_size, rows * pixel_size
+
+          svg_content = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{svg_width}" height="{svg_height}">']
+          for x, week in enumerate(grid_data):
+              for y, count in enumerate(week):
+                  color = colors[count]
+                  rect = f'<rect x="{x*pixel_size}" y="{y*pixel_size}" width="{pixel_size}" height="{pixel_size}" fill="{color}" stroke="#eaeaea" stroke-width="1"/>'
+                  svg_content.append(rect)
+          svg_content.append("</svg>")
+
+          os.makedirs("dist", exist_ok=True)
+          with open("dist/contribution-grid.svg", "w") as f:
+              f.write("\n".join(svg_content))
+          EOF
+
+          GITHUB_USERNAME=${{ github.repository_owner }} python generate_grid.py
+
+      - name: 推送文件到仓库
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "Update pixel contribution grid: ${{ github.sha }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
