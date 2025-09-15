@@ -61,7 +61,7 @@
       🔗 专注于 <strong>区块链底层协议设计</strong><br>
       ⛏️ 研究 <strong>共识算法优化与实现</strong><br>
       💻 开发 <strong>智能合约与去中心化应用</strong><br>
-      🔒 实践 <strong>区块链安全与隐私保护技术</strong><br>
+      🔒 实践 <strong>区块链安全与隐私保护</strong><br>
       🌐 探索 <strong>跨链交互与分布式账本</strong>
     </td>
     <td width="33.333%" valign="top" style="padding: 0 8px; box-sizing: border-box;">
