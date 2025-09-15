@@ -9,10 +9,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # 拉取仓库代码
-      - name:  checkout 代码
+      - name: checkout 代码
         uses: actions/checkout@v4
 
-      # 设置Python环境（生成图表需要Python）
+      # 创建输出目录（新增步骤，防止目录不存在）
+      - name: 创建输出目录
+        run: mkdir -p dist
+
+      # 设置Python环境
       - name: 设置Python
         uses: actions/setup-python@v5
         with:
@@ -24,19 +28,15 @@ jobs:
           python -m pip install --upgrade pip
           pip install matplotlib numpy requests python-dotenv
 
-      # 生成像素风格贡献日历
+      # 生成像素风格贡献日历（修复数据解析逻辑）
       - name: 生成贡献日历SVG
         run: |
-          # 创建输出目录
-          mkdir -p dist
-          
-          # 编写Python脚本生成日历
+          # 编写Python脚本生成日历（修复数据访问错误）
           cat > generate_grid.py << 'EOF'
           import os
           import requests
           import matplotlib.pyplot as plt
           import numpy as np
-          from datetime import datetime, timedelta
 
           # 获取GitHub贡献数据
           username = os.getenv('GITHUB_USERNAME')
@@ -44,16 +44,39 @@ jobs:
           response = requests.get(url)
           contributions = response.json()
 
-          # 提取贡献数据并转换为矩阵
+          # 提取贡献数据并转换为矩阵（修复核心解析逻辑）
           grid_data = []
           week = []
-          for day in contributions['contributions']:
-              # 用贡献数决定颜色深度（0-4级）
-              count = min(4, day['count'])  # 限制最大等级为4
+          
+          # 兼容不同格式的贡献数据
+          if 'contributions' in contributions:
+              contribution_list = contributions['contributions']
+          else:
+              contribution_list = contributions  # 处理直接返回列表的情况
+
+          for item in contribution_list:
+              # 尝试多种数据格式解析
+              if isinstance(item, dict) and 'count' in item:
+                  count = item['count']
+              elif isinstance(item, list) and len(item) > 0 and isinstance(item[0], dict) and 'count' in item[0]:
+                  count = item[0]['count']  # 处理嵌套列表格式
+              else:
+                  count = 0  # 无法解析时默认为0
+                  
+              # 限制最大等级为4，确保颜色梯度合理
+              count = min(4, max(0, count))  # 同时确保不会出现负数
               week.append(count)
+              
+              # 每7天组成一行（一周）
               if len(week) == 7:
                   grid_data.append(week)
                   week = []
+
+          # 确保最后一周数据完整（不足7天补0）
+          if len(week) > 0:
+              while len(week) < 7:
+                  week.append(0)
+              grid_data.append(week)
 
           # 转换为numpy数组
           grid_array = np.array(grid_data)
