@@ -4,7 +4,6 @@ on:
     - cron: "0 0 * * *"  # 每天凌晨自动更新
   workflow_dispatch:     # 允许手动触发更新
 
-# 权限配置
 permissions:
   contents: write
   pages: write
@@ -18,21 +17,40 @@ jobs:
       - name: 拉取仓库
         uses: actions/checkout@v4
 
-      # 创建输出目录
-      - name: 创建输出目录
-        run: mkdir -p dist
+      # 确保输出目录存在（关键修复）
+      - name: 创建并确认输出目录
+        run: |
+          mkdir -p dist
+          # 验证目录是否创建成功
+          if [ -d "dist" ]; then
+            echo "dist目录创建成功"
+          else
+            echo "dist目录创建失败"
+            exit 1
+          fi
 
-      # 生成蛇形动画（使用最新参数格式）
+      # 生成蛇形动画（使用绝对路径确保）
       - name: 生成蛇形SVG
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # 新增必填参数
-          # 使用args参数统一配置输出路径和颜色
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # 使用绝对路径确保工具能找到输出位置
           args: >
-            --svg-out dist/github-contribution-grid-snake.svg
-            --svg-out-dark dist/github-contribution-grid-snake-dark.svg
+            --svg-out /github/workspace/dist/github-contribution-grid-snake.svg
+            --svg-out-dark /github/workspace/dist/github-contribution-grid-snake-dark.svg
             --color-scheme radical
+
+      # 验证文件是否生成
+      - name: 检查生成的文件
+        run: |
+          echo "查看dist目录内容："
+          ls -la dist
+          # 如果文件不存在则报错
+          if [ ! -f "dist/github-contribution-grid-snake.svg" ]; then
+            echo "蛇形动画文件生成失败"
+            exit 1
+          fi
 
       # 推送文件到仓库
       - name: 推送文件到仓库
