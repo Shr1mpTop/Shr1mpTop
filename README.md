@@ -62,7 +62,7 @@
       ⛏️ 研究 <strong>共识算法优化与实现</strong><br>
       💻 开发 <strong>智能合约与去中心化应用</strong><br>
       🔒 实践 <strong>区块链安全与隐私保护技术</strong><br>
-      🌐 探索 <strong>跨链交互与分布式账本解决方案</strong>
+      🌐 探索 <strong>跨链交互与分布式账本</strong>
     </td>
     <td width="33.333%" valign="top" style="padding: 0 8px; box-sizing: border-box;">
       <strong>🧠 深度学习与数据可视化</strong><br>
@@ -75,10 +75,10 @@
     <td width="33.333%" valign="top" style="padding-left: 16px; box-sizing: border-box;">
       <strong>🎮 游戏开发与视觉创作</strong><br>
       🎮 开发 <strong>Unity 3D 游戏</strong>与交互系统<br>
-      🎨 设计 <strong>3D 场景与角色建模</strong>（Blender）<br>
-      ✂️ 制作 <strong>视频剪辑与特效</strong>（AE/PR）<br>
+      🎨 设计 <strong>3D 场景与角色建模</strong><br>
+      ✂️ 制作 <strong>视频剪辑与特效</strong><br>
       🌌 构建 <strong>沉浸式游戏环境</strong>与关卡设计<br>
-      ✨ 实现 <strong>视觉效果 (VFX) 与动画</strong>融合
+      ✨ 实现 <strong>视觉效果与动画</strong>融合
     </td>
   </tr>
 </table>
