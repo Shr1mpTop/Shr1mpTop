@@ -1,8 +1,8 @@
 name: 生成贡献蛇形动画
 on:
   schedule:
-    - cron: "0 0 * * *"  # 每天凌晨自动更新
-  workflow_dispatch:     # 允许手动触发更新
+    - cron: "0 0 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -13,46 +13,52 @@ jobs:
   generate-snake:
     runs-on: ubuntu-latest
     steps:
-      # 拉取代码仓库
       - name: 拉取仓库
         uses: actions/checkout@v4
 
-      # 确保输出目录存在（关键修复）
-      - name: 创建并确认输出目录
+      - name: 环境信息调试
+        run: |
+          echo "工作目录: $(pwd)"
+          echo "用户: $(whoami)"
+          echo "目录权限: $(ls -la)"
+
+      - name: 确保输出目录存在并设置权限
         run: |
           mkdir -p dist
-          # 验证目录是否创建成功
-          if [ -d "dist" ]; then
-            echo "dist目录创建成功"
-          else
-            echo "dist目录创建失败"
-            exit 1
-          fi
+          # 关键：设置宽松权限，避免容器内权限问题
+          chmod -R 777 dist
+          echo "dist目录详情:"
+          ls -ld dist
 
-      # 生成蛇形动画（使用绝对路径确保）
-      - name: 生成蛇形SVG
+      - name: 生成蛇形SVG（带详细日志）
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # 使用绝对路径确保工具能找到输出位置
           args: >
             --svg-out /github/workspace/dist/github-contribution-grid-snake.svg
             --svg-out-dark /github/workspace/dist/github-contribution-grid-snake-dark.svg
             --color-scheme radical
+            --debug  # 启用调试模式
 
-      # 验证文件是否生成
-      - name: 检查生成的文件
+      - name: 详细检查生成结果
         run: |
-          echo "查看dist目录内容："
+          echo "dist目录内容:"
           ls -la dist
-          # 如果文件不存在则报错
-          if [ ! -f "dist/github-contribution-grid-snake.svg" ]; then
-            echo "蛇形动画文件生成失败"
+          echo "工作区完整目录结构:"
+          ls -laR
+          
+          # 检查文件是否存在
+          if [ -f "/github/workspace/dist/github-contribution-grid-snake.svg" ]; then
+            echo "文件生成成功!"
+            echo "文件大小: $(du -h /github/workspace/dist/github-contribution-grid-snake.svg)"
+            echo "文件前10行内容:"
+            head -n 10 /github/workspace/dist/github-contribution-grid-snake.svg
+          else
+            echo "错误: 文件未生成"
             exit 1
           fi
 
-      # 推送文件到仓库
       - name: 推送文件到仓库
         uses: crazy-max/ghaction-github-pages@v4
         with:
