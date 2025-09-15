@@ -3,6 +3,15 @@ on:
   schedule:
     - cron: "0 1 * * *"  # 每天凌晨1点自动更新
   workflow_dispatch:     # 允许手动触发
+  # 添加仓库内容变更触发（可选）
+  push:
+    branches: [ main ]
+
+# 关键修复：添加权限配置
+permissions:
+  contents: write  # 允许写入仓库内容
+  pages: write     # 允许操作GitHub Pages
+  id-token: write  # 用于身份验证
 
 jobs:
   generate-contribution-grid:
@@ -11,8 +20,10 @@ jobs:
       # 拉取仓库代码
       - name: checkout 代码
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 确保获取完整历史
 
-      # 创建输出目录（新增步骤，防止目录不存在）
+      # 创建输出目录
       - name: 创建输出目录
         run: mkdir -p dist
 
@@ -22,86 +33,74 @@ jobs:
         with:
           python-version: "3.10"
 
-      # 安装生成工具依赖
+      # 安装依赖
       - name: 安装依赖
         run: |
           python -m pip install --upgrade pip
           pip install matplotlib numpy requests python-dotenv
 
-      # 生成像素风格贡献日历（修复数据解析逻辑）
+      # 生成贡献日历SVG（使用之前修复的解析逻辑）
       - name: 生成贡献日历SVG
         run: |
-          # 编写Python脚本生成日历（修复数据访问错误）
+          # （此处省略Python脚本内容，保持与之前修复版一致）
           cat > generate_grid.py << 'EOF'
           import os
           import requests
           import matplotlib.pyplot as plt
           import numpy as np
 
-          # 获取GitHub贡献数据
           username = os.getenv('GITHUB_USERNAME')
           url = f"https://github-contributions-api.deno.dev/{username}.json"
           response = requests.get(url)
           contributions = response.json()
 
-          # 提取贡献数据并转换为矩阵（修复核心解析逻辑）
           grid_data = []
           week = []
           
-          # 兼容不同格式的贡献数据
           if 'contributions' in contributions:
               contribution_list = contributions['contributions']
           else:
-              contribution_list = contributions  # 处理直接返回列表的情况
+              contribution_list = contributions
 
           for item in contribution_list:
-              # 尝试多种数据格式解析
               if isinstance(item, dict) and 'count' in item:
                   count = item['count']
               elif isinstance(item, list) and len(item) > 0 and isinstance(item[0], dict) and 'count' in item[0]:
-                  count = item[0]['count']  # 处理嵌套列表格式
+                  count = item[0]['count']
               else:
-                  count = 0  # 无法解析时默认为0
+                  count = 0
                   
-              # 限制最大等级为4，确保颜色梯度合理
-              count = min(4, max(0, count))  # 同时确保不会出现负数
+              count = min(4, max(0, count))
               week.append(count)
               
-              # 每7天组成一行（一周）
               if len(week) == 7:
                   grid_data.append(week)
                   week = []
 
-          # 确保最后一周数据完整（不足7天补0）
           if len(week) > 0:
               while len(week) < 7:
                   week.append(0)
               grid_data.append(week)
 
-          # 转换为numpy数组
           grid_array = np.array(grid_data)
-
-          # 创建像素风格图表
           plt.figure(figsize=(12, 6))
-          cmap = plt.cm.viridis  # 可替换为其他配色：plasma, inferno, magma, cividis
+          cmap = plt.cm.viridis
           plt.imshow(grid_array, cmap=cmap, aspect='auto', vmin=0, vmax=4)
-
-          # 隐藏坐标轴
           plt.axis('off')
-
-          # 保存为SVG
           plt.savefig('dist/contribution-grid.svg', bbox_inches='tight', pad_inches=0)
           EOF
           
-          # 运行生成脚本（传入用户名）
           GITHUB_USERNAME=${{ github.repository_owner }} python generate_grid.py
 
-      # 将生成的文件推送到output分支
+      # 推送文件到仓库（更新权限相关配置）
       - name: 推送文件到仓库
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: dist
+          # 新增配置：确保使用正确的推送方式
+          fqdn: example.com  # 可选，留空即可
+          commit_message: "Update contribution grid: ${{ github.sha }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
