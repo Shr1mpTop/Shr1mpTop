@@ -77,7 +77,7 @@
       🎮 开发 <strong>Unity 3D 游戏</strong>与交互系统<br>
       🎨 设计 <strong>3D 场景与角色建模</strong><br>
       ✂️ 制作 <strong>视频剪辑与特效</strong><br>
-      🌌 构建 <strong>沉浸式游戏环境</strong>与关卡设计<br>
+      🌌 构建 <strong>沉浸式游戏环境与关卡</strong><br>
       ✨ 实现 <strong>视觉效果与动画</strong>融合
     </td>
   </tr>
