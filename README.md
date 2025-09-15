@@ -93,11 +93,20 @@
 <!-- 统一卡片大小并调整比例 - 修复高度不一致问题 -->
 
 <div align="center">
-<div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 10px;">
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shr1mpTop&theme=radical" width="33%" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&layout=donut-vertical&theme=radical&cachebust=1" width="33%" alt="语言使用分布" />
-	<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shr1mpTop&theme=radical&cachebust=20250823" width="33%" />
-    </div>
+<table width="100%">
+  <tr>
+    <td align="center">
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shr1mpTop&theme=radical" width="250" />
+    </td>
+    <td align="center">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&layout=donut-vertical&theme=radical&cachebust=1" width="250" alt="语言使用分布" />
+    </td>
+    <td align="center">
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shr1mpTop&theme=radical&cachebust=20250823" width="250" />
+    </td>
+  </tr>
+</table>
+
 
 
 
