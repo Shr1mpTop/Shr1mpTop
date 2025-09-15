@@ -6,8 +6,10 @@
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF5F6D,100:FFC371&height=250&section=header&text=Zhili-He&fontSize=90&fontAlignY=35&animation=fadeIn&fontColor=white&desc=及时止损，渐入佳境&descAlignY=55" />
-
   <!-- 更改轮播内容和动画速度 -->
+
+
+
   [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2000&pause=500&color=2C9CDF&center=true&vCenter=true&width=600&lines=AI初学者+%7C+BlockChain研究者+%7C+创新者;探索科技边界，打造精彩体验;代码改变世界，创意驱动未来;永远保持好奇心，做最酷的项目)](https://git.io/typing-svg)
 
   <!-- 动感社交媒体按钮 - 增加阴影和悬停效果 -->
@@ -15,13 +17,14 @@
     <p align="center">
     <a href="https://github.com/Shr1mpTop"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
     <a href="mailto:hzl1356738145@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-    <!--
-暂时用不上的主页
+    <a href="https://www.xiaohongshu.com/user/profile/60f6ff180000000001015a73?xsec_token=ABGX01jMZYaKh-XF3gFAyEKhUBupUW-b0hAOqTWHSNIo0%3D&xsec_source=pc_search"><img src="https://img.shields.io/badge/小红书-FF2442?style=for-the-badge&logo=xiaohongshu&logoColor=white" alt="小红书"/></a>
+    <a href="https://space.bilibili.com/383185778?spm_id_from=333.788.0.0" target="_blank"><img src="https://img.shields.io/badge/Bilibili-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white" alt="Bilibili"/></a>
+    <!--暂时用不上的主页
 <a href="https://www.kaggle.com/ZephyrZhong248"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/></a> 
     <a href="https://orcid.org/0009-0003-0132-2036"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID"/></a>
     <a href="https://www.linkedin.com/in/your-profile"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
     <a href="https://scholar.google.com/citations?user=your-id"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"/></a>-->
-    <a href="https://www.xiaohongshu.com/user/profile/60f6ff180000000001015a73?xsec_token=ABGX01jMZYaKh-XF3gFAyEKhUBupUW-b0hAOqTWHSNIo0%3D&xsec_source=pc_search"><img src="https://img.shields.io/badge/小红书-FF2442?style=for-the-badge&logo=xiaohongshu&logoColor=white" alt="小红书"/></a>
+
 </p>
 <!-- 动态访问计数器 - 增强效果 -->
 
@@ -29,8 +32,18 @@
     <img src="https://komarev.com/ghpvc/?username=Shr1mpTop&style=for-the-badge&color=blueviolet" alt="访问计数器" />
     <img src="https://img.shields.io/github/followers/Shr1mpTop?style=for-the-badge&color=FF5F6D&labelColor=141321" alt="关注者" />
     <img src="https://img.shields.io/github/stars/Shr1mpTop?style=for-the-badge&color=FFC371&labelColor=141321" alt="星标" />
+	<img src="https://img.shields.io/github/last-commit/Shr1mpTop/hezhili.online?style=for-the-badge&label=Last%20Active" alt="最近活跃时间" />
+
+
+
+
+
+
+
+
 
 <!-- 添加动态波浪分隔符 -->
+
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2" />
 
 <h2 align="center">
@@ -38,39 +51,42 @@
   关于我
 </h2>
 
+
+
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
 <tr>
 <td width="34%" valign="top">
 
-> ### 🧠 大语言模型与 AI 系统
+> ### ⛓️ 区块链与分布式系统
 >
-> 🔬 专注于 **大型语言模型(LLMs)训练**
-> 🤖 探索 **多智能体系统架构**  
-> 🌐 开发 **AI 应用的高效推理引擎**  
-> 📊 实践 **强化学习与 RLHF**  
-> ⚡ 热衷于 **AI 模型部署与工程化实践**
+> 🔗 专注于 **区块链底层协议设计**
+> ⛏️ 研究 **共识算法优化与实现**
+> 💻 开发 **智能合约与去中心化应用**
+> 🔒 实践 **区块链安全与隐私保护技术**
+> 🌐 探索 **跨链交互与分布式账本解决方案**
 
 </td>
 <td width="34%" valign="top">
 
-> ### 🧪 深度学习与机器学习
+> ### 🧠 深度学习与数据可视化
 >
-> 🔍 钻研 **计算机视觉与图像识别**技术
-> 📝 实现 **自然语言处理与文本分析**  
-> 📈 应用 **时间序列预测与异常检测**  
-> 🧮 优化 **神经网络架构与训练策略**  
-> 🔄 探索 **迁移学习与少样本学习**
+> 🔍 钻研 **计算机视觉与图像识别** 技术
+> 📝 实现 **自然语言处理与文本分析**
+> 🧮 优化 **神经网络架构与训练策略**
+>
+> 📊 设计 **高维数据可视化** 方案
+> 🎨 构建 **交互式数据仪表盘** 系统
 
 </td>
 <td width="35%" valign="top">
 
-> ### 💾 数据库与系统
+> ### 🎮 游戏开发与视觉创作
 >
-> 🛢️ 设计 **分布式数据库**架构方案  
-> 🔍 研究 **向量数据库与相似性搜索**
-> 📈 优化 **大规模数据处理**流程  
-> 🔄 开发 **高性能数据分析**平台  
-> 🌐 构建 **知识图谱与语义检索**系统
+> 🎮 开发 **Unity 3D 游戏**与交互系统
+> 🎨 设计 **3D 场景与角色建模**（Blender）
+> ✂️ 制作 **视频剪辑与特效**（AE/PR）
+> 🌌 构建 **沉浸式游戏环境**与关卡设计
+> ✨ 实现 **视觉效果 (VFX) 与动画**融合
 
 </td>
 </tr>
@@ -81,10 +97,12 @@
   <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="30px" height="30px" style="vertical-align: middle; position: relative; top: -2px;"/>
   技能与工具
 </h2>
-
 <div align="center">
   <!-- 使用更美观的动态技能图标 -->
-  <img src="https://skillicons.dev/icons?i=python,c,mysql,pytorch,tensorflow,linux,matlab,html,css,js,git,vscode,latex,github&perline=7" />
+<img src="https://skillicons.dev/icons?i=python,c,mysql,mongodb,pytorch,tensorflow,linux,matlab,html,css,js,vue,jquery,git,vscode,latex,github,pr,ae,blender,unity&perline=7" />
+
+
+
 
   <!-- 添加技能动画卡片 - 改进布局 -->
 
@@ -104,20 +122,39 @@
 </h2>
   
 
-
   <!-- 统一卡片大小并调整比例 - 优化显示效果 -->
 <!-- 统一卡片大小并调整比例 - 修复高度不一致问题 -->
+
 <div align="center">
-<!-- 添加动态数据卡片 -->
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shr1mpTop&theme=radical&cachebust=20250823" width="33%" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Shr1mpTop&theme=radical&cachebust=20250823" width="33%" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shr1mpTop&theme=radical&cachebust=20250823" width="33%" />
+<div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 10px;">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shr1mpTop&theme=radical" width="33%" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&layout=donut-vertical&theme=radical&cachebust=1" width="33%" alt="语言使用分布" />
+	<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shr1mpTop&theme=radical&cachebust=20250823" width="33%" />
+    </div>
 
 
+
+
+
+<div align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shr1mpTop&theme=radical&cachebust=20250823" width="50%" />
+ <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shr1mpTop&theme=react-dark&hide_border=true" width="50%" alt="贡献热力图" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shr1mpTop&theme=radical&cachebust=20250823" width="50%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Shr1mpTop&theme=radical&cachebust=20250823" width="50%" />
 </div>
 
+
+
+
+
+
+
+
+
   <!-- 添加动态贡献热图 -->
-  <img src="https://github-profile-trophy.vercel.app/?username=Shr1mpTop&theme=radical&no-frame=true&row=1&column=7" width="100%" alt="GitHub 奖杯" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Shr1mpTop&theme=radical&no-frame=true&row=1&column=6" width="100%" alt="GitHub 奖杯" />
+<img src="https://github-contributor-stats.vercel.app/api?username=Shr1mpTop&limit=5&theme=radical&combine_all_yearly_contributions=true" width="100%" alt="年度贡献统计" />
+
 </div>
 
 <!-- 项目展示部分 - 统一标题样式并对齐图标 -->
@@ -126,7 +163,6 @@
   <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30px" height="30px" style="vertical-align: middle; position: relative; top: -2px;"/>
   精选项目
 </h2>
-
 <div align="center">
   <a href="https://github.com/Shr1mpTop/Gastrointestinal-Diagnosis-System">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Gastrointestinal-Diagnosis-System&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
@@ -134,10 +170,13 @@
   <a href="https://github.com/Shr1mpTop/SeekVest">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=SeekVest&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
   </a>
-  
 </div>
 
+
+
+
 <!-- 添加项目按钮 -->
+
 <div align="center">
   <a href="https://github.com/Shr1mpTop?tab=repositories">
     <img src="https://img.shields.io/badge/更多项目-查看全部-%23FF5F6D?style=for-the-badge&logo=github" alt="查看更多项目" />
@@ -154,15 +193,15 @@
 
 <div align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shr1mpTop/Shr1mpTop/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Shr1mpTop/Shr1mpTop/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub贡献蛇形动画" src="https://raw.githubusercontent.com/Shr1mpTop/Shr1mpTop/output/github-contribution-grid-snake.svg" width="100%">
 </picture>
-<!-- 实时贡献日历热图 -->
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=https://github-profile-trophy.vercel.app&theme=radical" width="100%" />
+<img src="https://ghchart.rshah.org/Shr1mpTop" width="100%" alt="GitHub 贡献热力图" />
 </div>
 
 <!-- 使用SVG制作的动态语录 -->
+
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=FF9190&center=true&vCenter=true&random=false&width=600&height=80&lines=%E2%80%9C%E4%BB%A3%E7%A0%81%E6%98%AF%E8%AF%97%EF%BC%8C%E5%A6%82%E6%B0%B4%E8%88%AC%E6%B5%81%E7%95%85%EF%BC%9B%E9%97%AE%E9%A2%98%E6%98%AF%E6%95%8C%EF%BC%8C%E8%A7%A3%E5%86%B3%E6%97%B6%E4%BE%BF%E7%A5%9E%E5%BE%80%E3%80%82%E2%80%9D;%E2%80%9C%E6%8A%80%E6%9C%AF%E6%98%AF%E8%89%BA%E6%9C%AF%EF%BC%8C%E5%88%9B%E6%96%B0%E6%98%AF%E7%94%9F%E5%91%BD%EF%BC%9B%E6%8C%91%E6%88%98%E6%98%AF%E4%BF%A1%E4%BB%B0%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%98%AF%E5%8A%9B%E9%87%8F%E3%80%82%E2%80%9D;%E2%80%9C%E6%AF%8F%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%EF%BC%8C%E9%83%BD%E6%98%AF%E6%9C%AA%E6%9D%A5%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%9B%BE%E3%80%82%E2%80%9D" alt="编程名言" />
 </div>
@@ -185,4 +224,3 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=12&height=3" width="100%" />
 </div>
-
