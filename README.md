@@ -108,7 +108,6 @@
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shr1mpTop&theme=radical&cachebust=20250823" width="50%" />
  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shr1mpTop&theme=react-dark&hide_border=true" width="50%" alt="贡献热力图" />
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shr1mpTop&theme=radical&cachebust=20250823" width="50%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Shr1mpTop&theme=radical&cachebust=20250823" width="50%" />
 </div>
 
 
