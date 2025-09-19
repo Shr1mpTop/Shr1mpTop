@@ -33,8 +33,7 @@
     <img src="https://img.shields.io/github/followers/Shr1mpTop?style=for-the-badge&color=FF5F6D&labelColor=141321" alt="关注者" />
     <img src="https://img.shields.io/github/stars/Shr1mpTop?style=for-the-badge&color=FFC371&labelColor=141321" alt="星标" />
 	<img src="https://img.shields.io/github/last-activity/Shr1mpTop?style=for-the-badge&label=Account Last Active" alt="最近活跃时间" />
-
-</p>
+	</p>
 
 
 
