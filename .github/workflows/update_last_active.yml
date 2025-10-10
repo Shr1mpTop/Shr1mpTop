@@ -1,0 +1,62 @@
+name: Update Last Active Badge
+
+on:
+  schedule:
+    # 每小时运行一次
+    - cron: '0 * * * *'
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  update-gist:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Update Gist
+        uses: actions/github-script@v6
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }} # 使用内置的 GITHUB_TOKEN 获取活动
+          script: |
+            const response = await github.rest.activity.listPublicEventsForUser({
+              username: 'ShrimpTop',
+              per_page: 100
+            });
+
+            const pushEvent = response.data.find(event => event.type === 'PushEvent');
+            let lastActiveDate = 'never';
+            if (pushEvent) {
+              const eventDate = new Date(pushEvent.created_at);
+              const now = new Date();
+              const diffTime = Math.abs(now - eventDate);
+              const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+              if (diffDays <= 1 && now.getDate() === eventDate.getDate()) {
+                lastActiveDate = 'today';
+              } else if (diffDays <= 2 && now.getDate() - 1 === eventDate.getDate()) {
+                lastActiveDate = 'yesterday';
+              } else {
+                lastActiveDate = `${diffDays-1} days ago`;
+              }
+            }
+
+            const gistData = {
+              "schemaVersion": 1,
+              "label": "Last Active",
+              "message": lastActiveDate,
+              "color": "4B5563"
+            };
+
+            const gistId = '${{ secrets.GIST_ID }}';
+            const gistToken = '${{ secrets.GIST_TOKEN }}';
+
+            const gistClient = github.getOctokit(gistToken);
+
+            await gistClient.rest.gists.update({
+              gist_id: gistId,
+              files: {
+                'last_active.json': {
+                  content: JSON.stringify(gistData)
+                }
+              }
+            });
