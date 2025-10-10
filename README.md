@@ -1,16 +1,10 @@
 <div align="center">
   <!-- 1. 顶部分割线：替换为渐变效果，提升视觉层次 -->
   <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=2C9CDF:546E7A&height=3" />
-
-  <!-- 2. 姓名标题：修复 HTML 标签语法，统一字体风格 -->
   <h1 style="font-size: 32px; font-family: 'Fira Code', monospace; margin: 16px 0 8px 0;">He Zhili</h1>
-
-  <!-- 3. 身份标签：增加轻微样式，与打字动画字体呼应 -->
   <p style="font-family: 'Fira Code', monospace; color: #6E7C7C; margin: 0 0 20px 0;">
     <i>AI Enthusiast | Blockchain Researcher | Innovator</i>
   </p>
-
-  <!-- 4. 打字动画：保留核心内容，微调参数让动画更流畅 -->
   <div style="margin-bottom: 24px;">
     <a href="https://github.com/Shr1mpTop">
       <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3000&pause=800&color=2C9CDF&center=true&vCenter=true&width=650&lines=Exploring+the+Frontiers+of+Technology;Building+Engaging+Experiences;Code+Changes+the+World,+Creativity+Drives+the+Future" alt="Typing Animation" />
@@ -33,37 +27,42 @@
     </a>
   </div>
 
-
-<div>
-  <!-- 访问量：蓝绿渐变+亮绿标签，突出活跃度 -->
-  <img 
-    src="https://komarev.com/ghpvc/?username=Shr1mpTop&style=for-the-badge&color=10B981&label=Profile+Views&labelColor=065F46" 
-    alt="访问计数器" 
-    style="transition: transform 0.3s ease; cursor: pointer;"
-  />
-
-  <!-- 关注者：紫粉渐变+深紫标签，强调社交属性 -->
-  <img 
-    src="https://img.shields.io/github/followers/Shr1mpTop?style=for-the-badge&color=C084FC:A855F7&label=GitHub+Followers&labelColor=581C87" 
-    alt="关注者"
-    style="transition: transform 0.3s ease; cursor: pointer;"
-  />
-
-  <!-- 星标数：橙红渐变+深橙标签，突出价值认可 -->
-  <img 
-    src="https://img.shields.io/github/stars/Shr1mpTop?style=for-the-badge&color=FB923C:F97316&label=Total+Stars&labelColor=9A3412" 
-    alt="星标"
-    style="transition: transform 0.3s ease; cursor: pointer;"
-  />
-
-  <!-- 最近活跃：青蓝渐变+深蓝标签，体现时效性 -->
-  <img 
-    src="https://img.shields.io/github/last-commit/Shr1mpTop/hezhili.online?style=for-the-badge&color=60A5FA:3B82F6&label=Last+Active&labelColor=1D4ED8" 
-    alt="最近活跃时间"
-    style="transition: transform 0.3s ease; cursor: pointer;"
-  />
-</div>
-
+  <!-- 数据统计：黑白学术风（强制横向排列） -->
+  <div 
+    style="display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: nowrap; overflow-x: auto; padding: 8px 0; margin-bottom: 16px;"
+    <!-- 访问量：浅灰主体+深灰标签 -->
+    <img 
+      src="https://komarev.com/ghpvc/?username=Shr1mpTop&style=for-the-badge&color=E5E7EB&label=Profile+Views&labelColor=1F2937&logoColor=FFFFFF" 
+      alt="访问计数器" 
+      style="transition: transform 0.2s ease; cursor: default;"
+      onmouseover="this.style.transform='scale(1.03)'"
+      onmouseout="this.style.transform='scale(1)'"
+    />
+    <!-- 关注者：中灰主体+黑色标签 -->
+    <img 
+      src="https://img.shields.io/github/followers/Shr1mpTop?style=for-the-badge&color=9CA3AF&label=GitHub+Followers&labelColor=111827&logoColor=FFFFFF" 
+      alt="关注者"
+      style="transition: transform 0.2s ease; cursor: default;"
+      onmouseover="this.style.transform='scale(1.03)'"
+      onmouseout="this.style.transform='scale(1)'"
+    />
+    <!-- 星标数：深灰主体+深黑标签 -->
+    <img 
+      src="https://img.shields.io/github/stars/Shr1mpTop?style=for-the-badge&color=6B7280&label=Total+Stars&labelColor=030712&logoColor=FFFFFF" 
+      alt="星标"
+      style="transition: transform 0.2s ease; cursor: default;"
+      onmouseover="this.style.transform='scale(1.03)'"
+      onmouseout="this.style.transform='scale(1)'"
+    />
+    <!-- 最近活跃：近黑主体+纯黑标签 -->
+    <img 
+      src="https://img.shields.io/github/last-commit/Shr1mpTop/hezhili.online?style=for-the-badge&color=4B5563&label=Last+Active&labelColor=000000&logoColor=FFFFFF" 
+      alt="最近活跃时间"
+      style="transition: transform 0.2s ease; cursor: default;"
+      onmouseover="this.style.transform='scale(1.03)'"
+      onmouseout="this.style.transform='scale(1)'"
+    />
+  </div>
   <!-- 7. 底部分割线：与顶部呼应，保持视觉闭环 -->
   <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=546E7A:2C9CDF&height=3" />
 </div>
