@@ -89,18 +89,36 @@
   <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="25px" height="25px" style="vertical-align: middle; position: relative; top: -2px;"/>
 </h2>
 
-<div align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shr1mpTop&theme=radical"/>  
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shr1mpTop&theme=radical" />
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+
+  <!-- GitHub Stats -->
+  <a href="https://github.com/Shr1mpTop">
+    <img height="180" src="https://github-readme-stats.vercel.app/api?username=Shr1mpTop&show_icons=true&theme=dark&cache_seconds=86400" />
+  </a>
+
+  <!-- Top Languages -->
+  <a href="https://github.com/Shr1mpTop?tab=repositories">
+    <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&layout=compact&langs_count=6&theme=dark&cache_seconds=86400" />
+  </a>
+
+  <!-- Productive Time -->
+  <a href="https://github.com/Shr1mpTop">
+    <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shr1mpTop&theme=dark" />
+  </a>
+
+  <!-- Wakatime Stats -->
+  <a href="https://wakatime.com/@hezhili0908">
+    <img height="180" src="https://github-readme-stats.vercel.app/api/wakatime?username=hezhili0908&theme=dark&layout=compact&cache_seconds=86400" />
+  </a>
+
 </div>
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&theme=radical" alt="most used languages" />  
-</div>
-<div align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shr1mpTop&theme=radical" />
- <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shr1mpTop&theme=react-dark&hide_border=true" width="50%" alt="贡献热力图" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shr1mpTop&theme=radical&cachebust=20251010" />
-</div>
+  <div align="center">
+ <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shr1mpTop&theme=react-dark&hide_border=true" width="100%" alt="贡献热力图" />
+      </div>
+    <div align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shr1mpTop&theme=dark&cachebust=20251010" width="100%" />
+  </div>
+
 
 
 
