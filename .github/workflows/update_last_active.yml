@@ -18,8 +18,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }} # 用于获取活动
           script: |
-            const { getOctokit } = require('@actions/github');
-
+            // 使用默认的 'github' 客户端获取活动
             const response = await github.rest.activity.listPublicEventsForUser({
               username: 'Shr1mpTop',
               per_page: 100
@@ -56,16 +55,22 @@ jobs:
             const gistToken = '${{ secrets.GIST_TOKEN }}';
             
             if (!gistId || !gistToken) {
-              throw new Error('GIST_ID or GIST_TOKEN is not set');
+              throw new Error('GIST_ID or GIST_TOKEN is not set in secrets');
             }
 
-            const gistClient = getOctokit(gistToken);
-
-            await gistClient.rest.gists.update({
-              gist_id: gistId,
-              files: {
-                'last_active.json': {
-                  content: JSON.stringify(gistData)
+            // 使用 fetch API 和 GIST_TOKEN 直接更新 Gist
+            // 这是最稳定、无依赖的方法
+            await fetch(`https://api.github.com/gists/${gistId}`, {
+              method: 'PATCH',
+              headers: {
+                'Authorization': `token ${gistToken}`,
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                files: {
+                  'last_active.json': {
+                    content: JSON.stringify(gistData)
+                  }
                 }
-              }
+              })
             });
