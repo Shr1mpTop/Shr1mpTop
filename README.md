@@ -88,27 +88,18 @@
   社区贡献
   <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="25px" height="25px" style="vertical-align: middle; position: relative; top: -2px;"/>
 </h2>
-  
-
-  <!-- 统一卡片大小并调整比例 - 优化显示效果 -->
-<!-- 统一卡片大小并调整比例 - 修复高度不一致问题 -->
 
 <div align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shr1mpTop&theme=radical" width="200" />  
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&layout=donut-vertical&theme=radical&cachebust=1" width="200" alt="语言使用分布" />  
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shr1mpTop&theme=radical&cachebust=20250823" width="200" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Shr1mpTop&theme=radical"/>  
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Shr1mpTop&theme=radical" />
 </div>
-
-
-
-
-
-
-
 <div align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shr1mpTop&theme=radical&cachebust=20250823" width="50%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&theme=radical" alt="most used languages" />  
+</div>
+<div align="center">
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shr1mpTop&theme=radical" />
  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shr1mpTop&theme=react-dark&hide_border=true" width="50%" alt="贡献热力图" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shr1mpTop&theme=radical&cachebust=20250823" width="50%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shr1mpTop&theme=radical&cachebust=20251010" />
 </div>
 
 
