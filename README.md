@@ -1,161 +1,123 @@
 <div align="center">
-<h2 id="模板展示" align="center">
-  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="60px" height="60px" style="vertical-align: middle; position: relative; top: -2px;"/>
-  👋 Hello，here is Zhili He
-</h2>
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF5F6D,100:FFC371&height=250&section=header&text=Zhili-He&fontSize=90&fontAlignY=35&animation=fadeIn&fontColor=white&desc=及时止损，渐入佳境&descAlignY=55" />
-  <!-- 更改轮播内容和动画速度 -->
+  [<img src="https://capsule-render.vercel.app/api?type=rect&color=auto&height=2" />](https://capsule-render.vercel.app/api?type=venom&height=300&color=timeGradient&text=I'm%20He%20Zhili%20&section=header&textBg=false&fontColor=000000&fontSize=48&fontAlignY=50&animation=scaleIn&desc=Only%20in%20death%20does%20duty%20end.&descSize=16&descAlign=50)
 
+<p align="center">
+  <i>AI Enthusiast | Blockchain Researcher | Innovator</i>
+</p>
 
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2500&pause=500&color=2C9CDF&center=true&vCenter=true&width=600&lines=Exploring+the+Frontiers+of+Technology;Building+Engaging+Experiences;Code+Changes+the+World,+Creativity+Drives+the+Future)](https://git.io/typing-svg)
 
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=2000&pause=500&color=2C9CDF&center=true&vCenter=true&width=600&lines=AI初学者+%7C+BlockChain研究者+%7C+创新者;探索科技边界，打造精彩体验;代码改变世界，创意驱动未来;永远保持好奇心，做最酷的项目)](https://git.io/typing-svg)
-
-  <!-- 动感社交媒体按钮 - 增加阴影和悬停效果 -->
-  <p align="center">
-    <p align="center">
+<p align="center">
     <a href="https://github.com/Shr1mpTop"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
     <a href="mailto:hzl1356738145@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
-    <a href="https://www.xiaohongshu.com/user/profile/60f6ff180000000001015a73?xsec_token=ABGX01jMZYaKh-XF3gFAyEKhUBupUW-b0hAOqTWHSNIo0%3D&xsec_source=pc_search"><img src="https://img.shields.io/badge/小红书-FF2442?style=for-the-badge&logo=xiaohongshu&logoColor=white" alt="小红书"/></a>
-    <a href="https://space.bilibili.com/383185778?spm_id_from=333.788.0.0" target="_blank"><img src="https://img.shields.io/badge/Bilibili-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white" alt="Bilibili"/></a>
-    <!--暂时用不上的主页
-<a href="https://www.kaggle.com/ZephyrZhong248"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/></a> 
-    <a href="https://orcid.org/0009-0003-0132-2036"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID"/></a>
-    <a href="https://www.linkedin.com/in/your-profile"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-    <a href="https://scholar.google.com/citations?user=your-id"><img src="https://img.shields.io/badge/Google_Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"/></a>-->
-
+    <a href="https://space.bilibili.com/383185778"><img src="https://img.shields.io/badge/Bilibili-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white" alt="Bilibili"/></a>
+    <a href="https://www.xiaohongshu.com/user/profile/60f6ff180000000001015a73"><img src="https://img.shields.io/badge/小红书-FF2442?style=for-the-badge&logo=xiaohongshu&logoColor=white" alt="小红书"/></a>
 </p>
-<!-- 动态访问计数器 - 增强效果 -->
 
-<p>
-    <img src="https://komarev.com/ghpvc/?username=Shr1mpTop&style=for-the-badge&color=blueviolet" alt="访问计数器" />
-    <img src="https://img.shields.io/github/followers/Shr1mpTop?style=for-the-badge&color=FF5F6D&labelColor=141321" alt="关注者" />
-    <img src="https://img.shields.io/github/stars/Shr1mpTop?style=for-the-badge&color=FFC371&labelColor=141321" alt="星标" />
+<p align="center">
+    <img src="https://komarev.com/ghpvc/?username=Shr1mpTop&style=for-the-badge&color=007EC6" alt="访问计数器" />
+    <img src="https://img.shields.io/github/followers/Shr1mpTop?style=for-the-badge&color=007EC6&labelColor=141321" alt="关注者" />
+    <img src="https://img.shields.io/github/stars/Shr1mpTop?style=for-the-badge&color=007EC6&labelColor=141321" alt="星标" />
      <img src="https://img.shields.io/github/last-commit/Shr1mpTop/hezhili.online?style=for-the-badge&label=Last%20Active" alt="最近活跃时间" />
 </p>
 
-<!-- 添加动态波浪分隔符 -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=auto&height=2" />
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=gradient&height=2" />
+##  Areas of Expertise
 
-<h2 align="center">
-  <img src="https://media.giphy.com/media/Sqlj82Xy4eZKSU9iVM/giphy.gif" width="30px" height="30px" style="vertical-align: middle; position: relative; top: -2px;"/>
-  关于我
-</h2>
+<table width="100%">
+  <tr align="center">
+    <td width="33%"><strong>⛓️ Blockchain & Distributed Systems</strong></td>
+    <td width="33%"><strong>🧠 Deep Learning & Data Visualization</strong></td>
+    <td width="33%"><strong>🎮 Game Development & Visual Creation</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>Blockchain Protocol Design</li>
+        <li>Consensus Algorithm Optimization</li>
+        <li>Smart Contracts & DApps</li>
+        <li>Blockchain Security & Privacy</li>
+        <li>Cross-Chain Interaction</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Computer Vision & Image Recognition</li>
+        <li>Natural Language Processing</li>
+        <li>Neural Network Architecture</li>
+        <li>High-Dimensional Data Visualization</li>
+        <li>Interactive Dashboard Systems</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Unity 3D Game Development</li>
+        <li>3D Scene & Character Modeling</li>
+        <li>Video Editing & Special Effects</li>
+        <li>Immersive Environment Design</li>
+        <li>VFX & Animation Integration</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 
-| ⛓️ 区块链与分布式系统 | 🧠 深度学习与数据可视化 | 🎮 游戏开发与视觉创作 |
-|----------------------|------------------------|--------------------|
-| 🔗 **区块链底层协议设计** | 🔍 **计算机视觉与图像识别** | 🎮 **Unity 3D 游戏** |
-| ⛏️ **共识算法优化与实现** | 📝 **自然语言处理与文本分析** | 🎨 **3D 场景与角色建模** |
-| 💻 **智能合约与去中心化应用** | 🧮 **神经网络架构与训练策略** | ✂️ **视频剪辑与特效** |
-| 🔒 **区块链安全与隐私保护** | 📊 **高维数据可视化方案** | 🌌 **沉浸式游戏环境与关卡** |
-| 🌐 **跨链交互与分布式账本** | 🎨 **交互式数据仪表盘系统** | ✨ **视觉效果与动画融合** |
-
-<!-- 技能展示 - 统一标题样式并调整图标对齐 -->
-<h2 align="center">
-  <img src="https://media2.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif?cid=ecf05e47a0n3gi1bfqntqmob8g9aid1oyj2wr3ds3mg700bl&rid=giphy.gif" width="30px" height="30px" style="vertical-align: middle; position: relative; top: -2px;"/>
-  技能与工具
-</h2>
-<div align="center">
-  <!-- 使用更美观的动态技能图标 -->
-<img src="https://skillicons.dev/icons?i=python,c,mysql,mongodb,pytorch,tensorflow,linux,matlab,html,css,js,vue,jquery,git,vscode,latex,github,pr,ae,blender,unity&perline=7" />
-  <!-- 添加技能动画卡片 - 改进布局 -->
-</div>
-<!-- 🌐 社区贡献 -->
-<h2 align="center">
-  <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="30px" height="30px" style="vertical-align: middle;"/>
-  社区贡献
-</h2>
-  <!-- GitHub Stats -->
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=Shr1mpTop&show_icons=true&theme=radical&hide_border=true&rank_icon=github&cache_seconds=86400" />
-  <!-- Top Languages -->
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&layout=compact&langs_count=6&theme=radical&hide_border=true&cache_seconds=86400" />
-  <!-- Productive Time -->
-  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shr1mpTop&theme=radical" />
-  <!-- Wakatime Stats -->
-  <img height="180" src="https://github-readme-stats.vercel.app/api/wakatime?username=hezhili0908&theme=radical&layout=compact&hide_border=true&cache_seconds=86400" />
-</div>
-<!-- 🧭 动态图表 -->
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shr1mpTop&theme=react-dark&hide_border=true&area=true&custom_title=Activity%20Graph&radius=12" width="100%" alt="贡献热力图"/>
-</div>
+## Technical Skills
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shr1mpTop&theme=radical" width="100%" alt="Profile Details"/>
+  <img src="https://skillicons.dev/icons?i=python,c,mysql,mongodb,pytorch,tensorflow,linux,matlab,html,css,js,vue,jquery,git,vscode,latex,github,pr,ae,blender,unity&perline=11" />
 </div>
-<!-- 奖杯 + 贡献榜 -->
+
+## GitHub Statistics
+
+<div align="center">
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=Shr1mpTop&show_icons=true&theme=default&hide_border=true&cache_seconds=86400" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&layout=compact&langs_count=6&theme=default&hide_border=true&cache_seconds=86400" />
+</div>
 <div align="center" style="margin-top: 10px;">
-  <img src="https://github-profile-trophy.vercel.app/?username=Shr1mpTop&theme=radical&no-frame=true&row=1&column=6" width="100%" alt="GitHub 奖杯"/>
-  <img src="https://github-contributor-stats.vercel.app/api?username=Shr1mpTop&limit=5&theme=radical&combine_all_yearly_contributions=true" width="100%" alt="年度贡献统计"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shr1mpTop&theme=minimal&hide_border=true&area=true&grid=false&custom_title=Contribution%20Graph" width="98%" alt="Contribution Graph"/>
 </div>
-<!-- 💡 精选项目 -->
-<h2 align="center">
-  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30px" style="vertical-align: middle;"/>
-  精选项目
-</h2>
+
+
+## Selected Projects
 
 <div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
   <a href="https://github.com/Shr1mpTop/Gastrointestinal-Diagnosis-System">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Gastrointestinal-Diagnosis-System&theme=radical&hide_border=true" width="48%"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Gastrointestinal-Diagnosis-System&theme=default&hide_border=true" width="48%"/>
+  </a>
+  <a href="https://github.com/Shr1mpTop/Buffotte">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Buffotte&theme=default&hide_border=true" width="48%"/>
+  </a>
+  <a href="https://github.com/Shr1mpTop/hezhili.online">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=hezhili.online&theme=default&hide_border=true" width="48%"/>
+  </a>
+  <a href="https://github.com/Shr1mpTop/Twikk">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Twikk&theme=default&hide_border=true" width="48%"/>
   </a>
   <a href="https://github.com/Shr1mpTop/SeekVest">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=SeekVest&theme=radical&hide_border=true" width="48%"/>
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=SeekVest&theme=default&hide_border=true" width="48%"/>
   </a>
+  <a href="https://github.com/Shr1mpTop/DistributedSystem_riviewer">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=DistributedSystem_riviewer&theme=default&hide_border=true" width="48%"/>
+  </a>
+
 </div>
 
-<!-- 项目按钮 -->
-<div align="center" style="margin-top: 10px;">
+<div align="center" style="margin-top: 20px;">
   <a href="https://github.com/Shr1mpTop?tab=repositories">
-    <img src="https://img.shields.io/badge/查看更多项目-Click%20Here-%23FF5F6D?style=for-the-badge&logo=github&logoColor=white" alt="查看更多项目"/>
+    <img src="https://img.shields.io/badge/View%20More%20Projects-gray?style=for-the-badge&logo=github&logoColor=white" alt="查看更多项目"/>
   </a>
 </div>
 
----
-
-<!-- 页尾波浪 -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=80&section=footer" width="100%"/>
-</div>
-
-<!-- GitHub 活动图 - 统一标题样式并对齐图标 -->
-<h2 align="center">
-  <img src="https://i.imgur.com/dBaSKWF.gif" height="25px" width="25px" style="vertical-align: middle; position: relative; top: -2px;"/>
-  GitHub 活动
-  <img src="https://i.imgur.com/dBaSKWF.gif" height="25px" width="25px" style="vertical-align: middle; position: relative; top: -2px;"/>
-</h2>
-<!-- 贡献蛇形图 - 优化显示效果 -->
+## Contribution Snake
 
 <div align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shr1mpTop/Shr1mpTop/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Shr1mpTop/Shr1mpTop/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub贡献蛇形动画" src="https://raw.githubusercontent.com/Shr1mpTop/Shr1mpTop/output/github-contribution-grid-snake.svg" width="100%">
+  <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Shr1mpTop/Shr1mpTop/output/github-contribution-grid-snake.svg" width="98%">
 </picture>
-<img src="https://ghchart.rshah.org/Shr1mpTop" width="100%" alt="GitHub 贡献热力图" />
 </div>
 
-<!-- 使用SVG制作的动态语录 -->
-
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=FF9190&center=true&vCenter=true&random=false&width=600&height=80&lines=%E2%80%9C%E4%BB%A3%E7%A0%81%E6%98%AF%E8%AF%97%EF%BC%8C%E5%A6%82%E6%B0%B4%E8%88%AC%E6%B5%81%E7%95%85%EF%BC%9B%E9%97%AE%E9%A2%98%E6%98%AF%E6%95%8C%EF%BC%8C%E8%A7%A3%E5%86%B3%E6%97%B6%E4%BE%BF%E7%A5%9E%E5%BE%80%E3%80%82%E2%80%9D;%E2%80%9C%E6%8A%80%E6%9C%AF%E6%98%AF%E8%89%BA%E6%9C%AF%EF%BC%8C%E5%88%9B%E6%96%B0%E6%98%AF%E7%94%9F%E5%91%BD%EF%BC%9B%E6%8C%91%E6%88%98%E6%98%AF%E4%BF%A1%E4%BB%B0%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%98%AF%E5%8A%9B%E9%87%8F%E3%80%82%E2%80%9D;%E2%80%9C%E6%AF%8F%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%EF%BC%8C%E9%83%BD%E6%98%AF%E6%9C%AA%E6%9D%A5%E7%9A%84%E8%AE%BE%E8%AE%A1%E5%9B%BE%E3%80%82%E2%80%9D" alt="编程名言" />
-</div>
-<!-- 页脚 - 统一标题样式并对齐图标 -->
-
-<h3 align="center">
-  <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30px" height="30px" style="vertical-align: middle; position: relative; top: -2px;"/>
-  感谢访问我的 GitHub 主页!
-  <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="30px" height="30px" style="vertical-align: middle; position: relative; top: -2px;"/>
-</h3>
-
-<p align="center">
-  <i>让我们一起探索代码的无限可能!✨</i> 
-</p>
-
-<!-- 添加波浪动画页脚 -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF5F6D,50:FF9671,100:FFC371&height=120&section=footer&animation=twinkling&fontAlignY=80" width="100%"/>
-
-<!-- 动态分隔符 -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=12&height=3" width="100%" />
 </div>
