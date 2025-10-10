@@ -18,45 +18,57 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }} # 使用内置的 GITHUB_TOKEN 获取活动
           script: |
-            const response = await github.rest.activity.listPublicEventsForUser({
-              username: 'ShrimpTop',
-              per_page: 100
-            });
+            - name: Update Gist
+            uses: actions/github-script@v6
+            with:
+              github-token: ${{ secrets.GITHUB_TOKEN }} # 用于获取活动
+              script: |
+                // 1. 从 @actions/github 包中引入 getOctokit 方法
+                const { getOctokit } = require('@actions/github');
 
-            const pushEvent = response.data.find(event => event.type === 'PushEvent');
-            let lastActiveDate = 'never';
-            if (pushEvent) {
-              const eventDate = new Date(pushEvent.created_at);
-              const now = new Date();
-              const diffTime = Math.abs(now - eventDate);
-              const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+                const response = await github.rest.activity.listPublicEventsForUser({
+                  username: 'Shr1mpTop',
+                  per_page: 100
+                });
 
-              if (diffDays <= 1 && now.getDate() === eventDate.getDate()) {
-                lastActiveDate = 'today';
-              } else if (diffDays <= 2 && now.getDate() - 1 === eventDate.getDate()) {
-                lastActiveDate = 'yesterday';
-              } else {
-                lastActiveDate = `${diffDays-1} days ago`;
-              }
-            }
+                const pushEvent = response.data.find(event => event.type === 'PushEvent');
+                let lastActiveDate = 'never';
+                let color = 'inactive';
 
-            const gistData = {
-              "schemaVersion": 1,
-              "label": "Last Active",
-              "message": lastActiveDate,
-              "color": "4B5563"
-            };
+                if (pushEvent) {
+                  const eventDate = new Date(pushEvent.created_at);
+                  const now = new Date();
+                  const diffTime = Math.abs(now - eventDate);
+                  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
-            const gistId = '${{ secrets.GIST_ID }}';
-            const gistToken = '${{ secrets.GIST_TOKEN }}';
-
-            const gistClient = github.getOctokit(gistToken);
-
-            await gistClient.rest.gists.update({
-              gist_id: gistId,
-              files: {
-                'last_active.json': {
-                  content: JSON.stringify(gistData)
+                  if (diffDays === 0) {
+                    lastActiveDate = 'today';
+                  } else if (diffDays === 1) {
+                    lastActiveDate = 'yesterday';
+                  } else {
+                    lastActiveDate = `${diffDays} days ago`;
+                  }
+                  color = "4B5563"; // 设置为活跃颜色
                 }
-              }
-            });
+
+                const gistData = {
+                  "schemaVersion": 1,
+                  "label": "Last Active",
+                  "message": lastActiveDate,
+                  "color": color
+                };
+
+                const gistId = '${{ secrets.GIST_ID }}';
+                const gistToken = '${{ secrets.GIST_TOKEN }}';
+
+                // 2. 使用引入的 getOctokit 方法和 GIST_TOKEN 来创建一个新的、专门用于操作 Gist 的客户端
+                const gistClient = getOctokit(gistToken);
+
+                await gistClient.rest.gists.update({
+                  gist_id: gistId,
+                  files: {
+                    'last_active.json': {
+                      content: JSON.stringify(gistData)
+                    }
+                  }
+                });
