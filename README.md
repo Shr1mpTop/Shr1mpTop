@@ -33,15 +33,7 @@
     <img src="https://img.shields.io/github/followers/Shr1mpTop?style=for-the-badge&color=FF5F6D&labelColor=141321" alt="关注者" />
     <img src="https://img.shields.io/github/stars/Shr1mpTop?style=for-the-badge&color=FFC371&labelColor=141321" alt="星标" />
      <img src="https://img.shields.io/github/last-commit/Shr1mpTop/hezhili.online?style=for-the-badge&label=Last%20Active" alt="最近活跃时间" />
-   
-
 </p>
-
-
-
-
-
-
 
 <!-- 添加动态波浪分隔符 -->
 
@@ -68,96 +60,62 @@
 <div align="center">
   <!-- 使用更美观的动态技能图标 -->
 <img src="https://skillicons.dev/icons?i=python,c,mysql,mongodb,pytorch,tensorflow,linux,matlab,html,css,js,vue,jquery,git,vscode,latex,github,pr,ae,blender,unity&perline=7" />
-
-
-
-
   <!-- 添加技能动画卡片 - 改进布局 -->
-
 </div>
-
-<!-- 擅长领域标题 - 统一样式并对齐图标 -->
-
-<!-- 动态分隔符 - 使用更现代的设计 -->
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=gradient&customColorList=12&height=3" width="100%" />
-</div>
-
+<!-- 🌐 社区贡献 -->
 <h2 align="center">
-  <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="25px" height="25px" style="vertical-align: middle; position: relative; top: -2px;"/>
+  <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="30px" height="30px" style="vertical-align: middle;"/>
   社区贡献
-  <img src="https://media.giphy.com/media/jSKBmKkvo2dPQQtsR1/giphy.gif" width="25px" height="25px" style="vertical-align: middle; position: relative; top: -2px;"/>
+</h2>
+  <!-- GitHub Stats -->
+  <img height="180" src="https://github-readme-stats.vercel.app/api?username=Shr1mpTop&show_icons=true&theme=radical&hide_border=true&rank_icon=github&cache_seconds=86400" />
+  <!-- Top Languages -->
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&layout=compact&langs_count=6&theme=radical&hide_border=true&cache_seconds=86400" />
+  <!-- Productive Time -->
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shr1mpTop&theme=radical" />
+  <!-- Wakatime Stats -->
+  <img height="180" src="https://github-readme-stats.vercel.app/api/wakatime?username=hezhili0908&theme=radical&layout=compact&hide_border=true&cache_seconds=86400" />
+</div>
+<!-- 🧭 动态图表 -->
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shr1mpTop&theme=react-dark&hide_border=true&area=true&custom_title=Activity%20Graph&radius=12" width="100%" alt="贡献热力图"/>
+</div>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shr1mpTop&theme=radical" width="100%" alt="Profile Details"/>
+</div>
+<!-- 奖杯 + 贡献榜 -->
+<div align="center" style="margin-top: 10px;">
+  <img src="https://github-profile-trophy.vercel.app/?username=Shr1mpTop&theme=radical&no-frame=true&row=1&column=6" width="100%" alt="GitHub 奖杯"/>
+  <img src="https://github-contributor-stats.vercel.app/api?username=Shr1mpTop&limit=5&theme=radical&combine_all_yearly_contributions=true" width="100%" alt="年度贡献统计"/>
+</div>
+<!-- 💡 精选项目 -->
+<h2 align="center">
+  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30px" style="vertical-align: middle;"/>
+  精选项目
 </h2>
 
 <div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-
-  <!-- GitHub Stats -->
-  <a href="https://github.com/Shr1mpTop">
-    <img height="180" src="https://github-readme-stats.vercel.app/api?username=Shr1mpTop&show_icons=true&theme=dark&cache_seconds=86400" />
-  </a>
-
-  <!-- Top Languages -->
-  <a href="https://github.com/Shr1mpTop?tab=repositories">
-    <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&layout=compact&langs_count=6&theme=dark&cache_seconds=86400" />
-  </a>
-
-  <!-- Productive Time -->
-  <a href="https://github.com/Shr1mpTop">
-    <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Shr1mpTop&theme=dark" />
-  </a>
-
-  <!-- Wakatime Stats -->
-  <a href="https://wakatime.com/@hezhili0908">
-    <img height="180" src="https://github-readme-stats.vercel.app/api/wakatime?username=hezhili0908&theme=dark&layout=compact&cache_seconds=86400" />
-  </a>
-
-</div>
-  <div align="center">
- <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shr1mpTop&theme=react-dark&hide_border=true" width="100%" alt="贡献热力图" />
-      </div>
-    <div align="center">
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Shr1mpTop&theme=dark&cachebust=20251010" width="100%" />
-  </div>
-
-
-
-
-
-
-
-
-
-
-  <!-- 添加动态贡献热图 -->
-  <img src="https://github-profile-trophy.vercel.app/?username=Shr1mpTop&theme=radical&no-frame=true&row=1&column=6" width="100%" alt="GitHub 奖杯" />
-<img src="https://github-contributor-stats.vercel.app/api?username=Shr1mpTop&limit=5&theme=radical&combine_all_yearly_contributions=true" width="100%" alt="年度贡献统计" />
-
-</div>
-
-<!-- 项目展示部分 - 统一标题样式并对齐图标 -->
-
-<h2 align="center">
-  <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30px" height="30px" style="vertical-align: middle; position: relative; top: -2px;"/>
-  精选项目
-</h2>
-<div align="center">
   <a href="https://github.com/Shr1mpTop/Gastrointestinal-Diagnosis-System">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Gastrointestinal-Diagnosis-System&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Gastrointestinal-Diagnosis-System&theme=radical&hide_border=true" width="48%"/>
   </a>
   <a href="https://github.com/Shr1mpTop/SeekVest">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=SeekVest&theme=radical&hide_border=true&title_color=FF5F6D" width="49%" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=SeekVest&theme=radical&hide_border=true" width="48%"/>
   </a>
 </div>
 
-
-
-
-<!-- 添加项目按钮 -->
-
-<div align="center">
+<!-- 项目按钮 -->
+<div align="center" style="margin-top: 10px;">
   <a href="https://github.com/Shr1mpTop?tab=repositories">
-    <img src="https://img.shields.io/badge/更多项目-查看全部-%23FF5F6D?style=for-the-badge&logo=github" alt="查看更多项目" />
+    <img src="https://img.shields.io/badge/查看更多项目-Click%20Here-%23FF5F6D?style=for-the-badge&logo=github&logoColor=white" alt="查看更多项目"/>
   </a>
+</div>
+
+---
+
+<!-- 页尾波浪 -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12&height=80&section=footer" width="100%"/>
 </div>
 
 <!-- GitHub 活动图 - 统一标题样式并对齐图标 -->
