@@ -54,16 +54,16 @@
       onmouseover="this.style.transform='scale(1.03)'"
       onmouseout="this.style.transform='scale(1)'"
     />
-    <!-- 最近活跃：近黑主体+纯黑标签 -->
-    <img 
-      src="https://img.shields.io/github/last-commit/Shr1mpTop/hezhili.online?style=for-the-badge&color=4B5563&label=Last+Active&labelColor=000000&logoColor=FFFFFF" 
-      alt="最近活跃时间"
-      style="transition: transform 0.2s ease; cursor: default;"
-      onmouseover="this.style.transform='scale(1.03)'"
-      onmouseout="this.style.transform='scale(1)'"
-    />
-    [![Last Active](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Shr1mpTop/c30e019de7da8b69a192a2381affbe70/raw/last_active.json&style=for-the-badge&label=Last%20Active&labelColor=000000&logo=github&logoColor=FFFFFF)](https://github.com/Shr1mpTop/)
-  </div>
+    <!-- 最近活跃：近黑主体+纯黑标签 (全局) -->
+    <a href="https://github.com/Shr1mpTop/">
+      <img 
+        src="https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/Shr1mpTop/c30e019de7da8b69a192a2381affbe70/raw/last_active.json&style=for-the-badge&label=Last%20Active&labelColor=000000&logo=github&logoColor=FFFFFF" 
+        alt="最近活跃时间"
+        style="transition: transform 0.2s ease; cursor: default;"
+        onmouseover="this.style.transform='scale(1.03)'"
+        onmouseout="this.style.transform='scale(1)'"
+      />
+    </a>
   <!-- 7. 底部分割线：与顶部呼应，保持视觉闭环 -->
   <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=546E7A:2C9CDF&height=3" />
 </div>
