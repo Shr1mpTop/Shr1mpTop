@@ -2,44 +2,42 @@ name: Update Last Active Badge
 
 on:
   schedule:
-    # 每小时运行一次
     - cron: '0 * * * *'
-  workflow_dispatch: # 允许手动触发
+  workflow_dispatch:
 
 jobs:
   update-gist:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Update Gist with cache busting
+      - name: Update Gist using direct repo check
         uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            // 使用更底层的 github.request 方法，并添加 http headers 来禁用缓存
-            const response = await github.request('GET /users/{username}/events', {
+            // 1. 获取用户所有的公开仓库
+            const repos = await github.paginate(github.rest.repos.listForUser, {
               username: 'Shr1mpTop',
-              per_page: 100,
-              headers: {
-                'X-GitHub-Api-Version': '2022-11-28',
-                'Cache-Control': 'no-cache'
-              }
+              type: 'owner',
+              sort: 'pushed', // 按最近推送时间排序
             });
 
-            console.log(`获取到了 ${response.data.length} 条公开活动...`);
-            if (response.data.length > 0) {
-              console.log(`最新的活动是: ${response.data[0].type}, 创建于: ${response.data[0].created_at}`);
+            if (repos.length === 0) {
+              console.log("没有找到任何公开仓库。");
+              return; // 如果没有仓库就提前退出
             }
 
-            const pushEvent = response.data.find(event => event.type === 'PushEvent');
+            // 2. 由于已经按 pushed 排序，第一个仓库就是最近活跃的
+            const lastPushedRepo = repos[0];
+            const lastPushedAt = lastPushedRepo.pushed_at;
+            
+            console.log(`最近活跃的仓库是: ${lastPushedRepo.name}, 推送于: ${lastPushedAt}`);
+
+            // 3. 计算时间差
             let lastActiveDate = 'never';
             let color = 'inactive';
 
-            if (pushEvent) {
-              console.log(`找到了最新的 PushEvent，发生于: ${pushEvent.created_at}`);
-              const eventDate = new Date(pushEvent.created_at);
+            if (lastPushedAt) {
+              const eventDate = new Date(lastPushedAt);
               const now = new Date();
               const diffTime = Math.abs(now - eventDate);
               const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
@@ -52,10 +50,9 @@ jobs:
                 lastActiveDate = `${diffDays} days ago`;
               }
               color = "4B5563";
-            } else {
-              console.log("在返回的活动中没有找到任何 PushEvent。");
             }
 
+            // 4. 更新 Gist (这部分代码不变)
             const gistData = {
               "schemaVersion": 1,
               "label": "Last Active",
