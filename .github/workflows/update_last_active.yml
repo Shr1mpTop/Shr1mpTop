@@ -13,22 +13,32 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Update Gist
+      - name: Update Gist with cache busting
         uses: actions/github-script@v6
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }} # 用于获取活动
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            // 使用默认的 'github' 客户端获取活动
-            const response = await github.rest.activity.listPublicEventsForUser({
+            // 使用更底层的 github.request 方法，并添加 http headers 来禁用缓存
+            const response = await github.request('GET /users/{username}/events', {
               username: 'Shr1mpTop',
-              per_page: 100
+              per_page: 100,
+              headers: {
+                'X-GitHub-Api-Version': '2022-11-28',
+                'Cache-Control': 'no-cache'
+              }
             });
+
+            console.log(`获取到了 ${response.data.length} 条公开活动...`);
+            if (response.data.length > 0) {
+              console.log(`最新的活动是: ${response.data[0].type}, 创建于: ${response.data[0].created_at}`);
+            }
 
             const pushEvent = response.data.find(event => event.type === 'PushEvent');
             let lastActiveDate = 'never';
             let color = 'inactive';
 
             if (pushEvent) {
+              console.log(`找到了最新的 PushEvent，发生于: ${pushEvent.created_at}`);
               const eventDate = new Date(pushEvent.created_at);
               const now = new Date();
               const diffTime = Math.abs(now - eventDate);
@@ -41,7 +51,9 @@ jobs:
               } else {
                 lastActiveDate = `${diffDays} days ago`;
               }
-              color = "4B5563"; // 设置为活跃颜色
+              color = "4B5563";
+            } else {
+              console.log("在返回的活动中没有找到任何 PushEvent。");
             }
 
             const gistData = {
@@ -58,8 +70,6 @@ jobs:
               throw new Error('GIST_ID or GIST_TOKEN is not set in secrets');
             }
 
-            // 使用 fetch API 和 GIST_TOKEN 直接更新 Gist
-            // 这是最稳定、无依赖的方法
             await fetch(`https://api.github.com/gists/${gistId}`, {
               method: 'PATCH',
               headers: {
