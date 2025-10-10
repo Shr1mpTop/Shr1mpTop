@@ -25,7 +25,7 @@
     <a href="https://www.xiaohongshu.com/user/profile/60f6ff180000000001015a73" target="_blank" style="text-decoration: none;">
       <img src="https://img.shields.io/badge/小红书-FF2442?style=for-the-badge&logo=xiaohongshu&logoColor=white" alt="小红书" />
     </a>
-    <a href="https://steamcommunity.com/id/76561198367786896" target="_blank" style="text-decoration: none; transition: transform 0.2s ease;">
+    <a href="https://steamcommunity.com/profiles/76561198367786896/" target="_blank" style="text-decoration: none; transition: transform 0.2s ease;">
       <img src="https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white" alt="Steam" style="vertical-align: middle;" />
     </a>
   </div>
