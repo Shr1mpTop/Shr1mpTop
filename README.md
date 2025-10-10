@@ -16,7 +16,7 @@
     <a href="https://github.com/Shr1mpTop" target="_blank" style="text-decoration: none;">
       <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
     </a>
-    <a href="mailto:hzl1356738145@gmail.com" target="_blank" style="text-decoration: none;">
+    <a href="mailto:hezh0014@e.ntu.edu.sg" target="_blank" style="text-decoration: none;">
       <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
     </a>
     <a href="https://space.bilibili.com/383185778" target="_blank" style="text-decoration: none;">
