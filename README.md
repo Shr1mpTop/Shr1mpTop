@@ -120,13 +120,13 @@
 
 <div align="center">
   <img height="180" src="https://github-readme-stats.vercel.app/api?username=Shr1mpTop&show_icons=true&theme=default&hide_border=true&cache_seconds=86400" />
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&layout=compact&langs_count=6&theme=default&hide_border=true" />
+  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&theme=default&hide_border=true&hide=Jupyter Notebook,html&layout=donut"/>
 </div>
 <div align="center" style="margin-top: 10px;">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shr1mpTop&theme=minimal&hide_border=true&area=true&grid=false&custom_title=Contribution%20Graph" width="98%" alt="Contribution Graph"/>
 </div>
 
-
+&layout=compact&langs_count=6
 ## Selected Projects
 
 <div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
