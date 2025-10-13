@@ -119,8 +119,8 @@
 ## GitHub Statistics
 
 <div align="center">
-    <img height="240" src="https://github-readme-stats.vercel.app/api?username=Shr1mpTop&show_icons=true&theme=default&hide_border=true&cache_seconds=86400" />
-    <img height="240" src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&theme=default&hide_border=true&hide=Jupyter%20Notebook,html&layout=compact&cache_seconds=86400&stats_format=bytes"/>
+    <img height="180" src="https://github-readme-stats.vercel.app/api?username=Shr1mpTop&show_icons=true&theme=default&hide_border=true&cache_seconds=86400" />
+    <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs?username=Shr1mpTop&theme=default&hide_border=true&hide=Jupyter%20Notebook,html&layout=compact&cache_seconds=86400&stats_format=bytes"/>
   </div>
 <div align="center">
     <img height ="240" src = "https://github-readme-stats.vercel.app/api/wakatime?username=hezhili0908&theme=default&layout=compact&hide_border=true&cache_seconds=86400"/>
