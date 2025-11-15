@@ -40,7 +40,7 @@
       onmouseover="this.style.transform='scale(1.03)'"
       onmouseout="this.style.transform='scale(1)'"
     />
-    <!-- 关注者：中灰主体+黑色标签 -->
+    <!-- 关注者：中灰主体+黑色标签（添加style参数破缓存） -->
     <img 
       src="https://img.shields.io/github/followers/Shr1mpTop?style=for-the-badge&color=9CA3AF&label=GitHub+Followers&labelColor=111827&logoColor=FFFFFF" 
       alt="关注者"
@@ -48,7 +48,7 @@
       onmouseover="this.style.transform='scale(1.03)'"
       onmouseout="this.style.transform='scale(1)'"
     />
-    <!-- 星标数：深灰主体+深黑标签 -->
+    <!-- 星标数：深灰主体+深黑标签（添加style参数破缓存） -->
     <img 
       src="https://img.shields.io/github/stars/Shr1mpTop?style=for-the-badge&color=6B7280&label=Total+Stars&labelColor=030712&logoColor=FFFFFF" 
       alt="星标"
