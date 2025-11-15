@@ -31,6 +31,7 @@
   </div>
 
   <!-- 数据统计：黑白学术风（强制横向排列） -->
+    <!-- 数据统计：黑白学术风（强制横向排列） -->
   <div 
     style="display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: nowrap; overflow-x: auto; padding: 8px 0; margin-bottom: 16px;"
     <!-- 访问量：浅灰主体+深灰标签 -->
@@ -45,6 +46,14 @@
     <img 
       src="https://img.shields.io/github/followers/Shr1mpTop?style=for-the-badge&color=9CA3AF&label=GitHub+Followers&labelColor=111827&logoColor=FFFFFF" 
       alt="关注者"
+      style="transition: transform 0.2s ease; cursor: default;"
+      onmouseover="this.style.transform='scale(1.03)'"
+      onmouseout="this.style.transform='scale(1)'"
+    />
+    <!-- 星标数：深灰主体+深黑标签 -->
+    <img 
+      src="https://img.shields.io/github/stars/Shr1mpTop?style=for-the-badge&color=6B7280&label=Total+Stars&labelColor=030712&logoColor=FFFFFF" 
+      alt="星标"
       style="transition: transform 0.2s ease; cursor: default;"
       onmouseover="this.style.transform='scale(1.03)'"
       onmouseout="this.style.transform='scale(1)'"
