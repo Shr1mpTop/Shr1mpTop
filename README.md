@@ -1,5 +1,4 @@
 <div align="center">
-  <!-- 1. 顶部分割线：替换为渐变效果，提升视觉层次 -->
   <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=2C9CDF:546E7A&height=3" />
   <h1 style="font-size: 32px; font-family: 'Fira Code', monospace; margin: 16px 0 8px 0;">He Zhili</h1>
   <p style="font-family: 'Fira Code', monospace; color: #6E7C7C; margin: 0 0 20px 0;">
