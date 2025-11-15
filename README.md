@@ -49,14 +49,6 @@
       onmouseover="this.style.transform='scale(1.03)'"
       onmouseout="this.style.transform='scale(1)'"
     />
-    <!-- 星标数：深灰主体+深黑标签 -->
-        <img 
-      src="https://img.shields.io/github/stars/Shr1mpTop?style=for-the-badge&color=6B7280&label=Total+Stars&labelColor=030712&logoColor=FFFFFF" 
-      alt="星标"
-      style="transition: transform 0.2s ease; cursor: default;"
-      onmouseover="this.style.transform='scale(1.03)'"
-      onmouseout="this.style.transform='scale(1)'"
-    />
     <!-- 最近活跃：近黑主体+纯黑标签 (全局) -->
     <a href="https://github.com/Shr1mpTop/">
       <img 
