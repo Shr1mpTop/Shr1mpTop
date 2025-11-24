@@ -126,6 +126,7 @@
 <div align="center" style="margin-top: 0px;">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shr1mpTop&theme=minimal&hide_border=true&area=true&grid=false&custom_title=Contribution%20Graph" width="98%" alt="Contribution Graph"/>
 </div>
+
 ## Selected Projects
 
 <div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
