@@ -110,7 +110,7 @@
 ## Technical Skills
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,c,mysql,mongodb,pytorch,tensorflow,linux,matlab,html,css,js,vue,jquery,git,vscode,latex,github,pr,ae,blender,unity&perline=11" />
+  <img src="https://skillicons.dev/icons?i=python,c,cs,cpp,fastapi,flask,nginx,mysql,anaconda,powershell,mongodb,bash,pytorch,tensorflow,redhat,linux,matlab,html,css,js,npm,vue,vite,jquery,git,vscode,latex,github,pr,ae,blender,unity&perline=11" />
 </div>
 
 ## GitHub Statistics
