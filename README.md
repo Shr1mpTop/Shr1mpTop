@@ -114,18 +114,16 @@
 </div>
 
 ## GitHub Statistics
-
 <div align="center">
-    <img height="180" src="https://github-readme-stats-git-master-hezhilis-projects.vercel.app/api?username=Shr1mpTop&show_icons=true&theme=default&hide_border=true&cache_seconds=86400" />
-    <img height="180" src="https://github-readme-stats-git-master-hezhilis-projects.vercel.app/api/top-langs?username=Shr1mpTop&theme=default&hide_border=true&hide=Jupyter%20Notebook,html&layout=compact&cache_seconds=86400&stats_format=bytes"/>
-</div>
-
+    <img height="180" src="https://github-readme-stats-weld-omega.vercel.app/api?username=Shr1mpTop&show_icons=true&theme=default&hide_border=true&cache_seconds=86400" />
+    <img height="180" src="https://github-readme-stats-weld-omega.vercel.app/api/top-langs?username=Shr1mpTop&theme=default&hide_border=true&hide=Jupyter%20Notebook,html&layout=compact&cache_seconds=86400&stats_format=bytes"/>
+  </div>
 <div align="center">
-    <img height ="240" src = "https://github-readme-stats-git-master-hezhilis-projects.vercel.app/api/wakatime?username=hezhili0908&theme=default&layout=compact&hide_border=true&cache_seconds=86400"/>
+    <img height ="240" src = "https://github-readme-stats-weld-omega.vercel.app/api/wakatime?username=hezhili0908&theme=default&layout=compact&hide_border=true&cache_seconds=86400"/>
 </div>
 
 <div align="center" style="margin-top: 0px;">
-  <img src="github-readme-stats-git-master-hezhilis-projects.vercel.app/graph?username=Shr1mpTop&theme=minimal&hide_border=true&area=true&grid=false&custom_title=Contribution%20Graph" width="98%" alt="Contribution Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Shr1mpTop&theme=minimal&hide_border=true&area=true&grid=false&custom_title=Contribution%20Graph" width="98%" alt="Contribution Graph"/>
 </div>
 
 ## Selected Projects
