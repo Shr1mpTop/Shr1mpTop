@@ -130,24 +130,23 @@
 
 <div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
   <a href="https://github.com/Shr1mpTop/Gastrointestinal-Diagnosis-System">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Gastrointestinal-Diagnosis-System&theme=default&hide_border=true" width="48%"/>
+    <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=Gastrointestinal-Diagnosis-System&theme=default&hide_border=true" width="48%"/>
   </a>
   <a href="https://github.com/Shr1mpTop/Buffotte">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Buffotte&theme=default&hide_border=true" width="48%"/>
+    <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=Buffotte&theme=default&hide_border=true" width="48%"/>
   </a>
   <a href="https://github.com/Shr1mpTop/hezhili.online">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=hezhili.online&theme=default&hide_border=true" width="48%"/>
+    <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=hezhili.online&theme=default&hide_border=true" width="48%"/>
   </a>
   <a href="https://github.com/Shr1mpTop/Twikk">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=Twikk&theme=default&hide_border=true" width="48%"/>
+    <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=Twikk&theme=default&hide_border=true" width="48%"/>
   </a>
   <a href="https://github.com/Shr1mpTop/SeekVest">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=SeekVest&theme=default&hide_border=true" width="48%"/>
+    <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=SeekVest&theme=default&hide_border=true" width="48%"/>
   </a>
   <a href="https://github.com/Shr1mpTop/DistributedSystem_riviewer">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Shr1mpTop&repo=DistributedSystem_riviewer&theme=default&hide_border=true" width="48%"/>
+    <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=DistributedSystem_riviewer&theme=default&hide_border=true" width="48%"/>
   </a>
-
 </div>
 
 <div align="center" style="margin-top: 20px;">
