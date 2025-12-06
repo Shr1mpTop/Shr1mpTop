@@ -119,7 +119,7 @@
     <img height="180" src="https://github-readme-stats-weld-omega.vercel.app/api/top-langs?username=Shr1mpTop&theme=default&hide_border=true&hide=Jupyter%20Notebook,html&layout=compact&stats_format=bytes"/>
   </div>
 <div align="center">
-    <img height ="240" src = "https://github-readme-stats-weld-omega.vercel.app/api/wakatime?username=hezhili0908&theme=default&layout=compact&hide_border=true"/>
+    <img height ="480" src = "https://github-readme-stats-weld-omega.vercel.app/api/wakatime?username=hezhili0908&theme=default&layout=compact&hide_border=true"/>
 </div>
 
 <div align="center" style="margin-top: 0px;">
