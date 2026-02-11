@@ -129,23 +129,24 @@
 ## Selected Projects
 
 <div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
-  <a href="https://github.com/Shr1mpTop/Gastrointestinal-Diagnosis-System">
-    <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=Gastrointestinal-Diagnosis-System&theme=default&hide_border=true" width="48%"/>
-  </a>
+  
   <a href="https://github.com/Shr1mpTop/Buffotte">
     <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=Buffotte&theme=default&hide_border=true" width="48%"/>
   </a>
-  <a href="https://github.com/Shr1mpTop/hezhili.online">
-    <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=hezhili.online&theme=default&hide_border=true" width="48%"/>
+  <a href="https://github.com/Shr1mpTop/Singapore-Major-Fan-Consensus-Protocol">
+    <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=Singapore-Major-Fan-Consensus-Protocol&theme=default&hide_border=true" width="48%"/>
   </a>
   <a href="https://github.com/Shr1mpTop/Fate-s_Echo">
     <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=Fate-s_Echo&theme=default&hide_border=true" width="48%"/>
   </a>
+  <a href="https://github.com/Shr1mpTop/hezhili.online">
+    <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=hezhili.online&theme=default&hide_border=true" width="48%"/>
+  </a>
   <a href="https://github.com/Shr1mpTop/Twikk">
     <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=Twikk&theme=default&hide_border=true" width="48%"/>
   </a>
-  <a href="https://github.com/Shr1mpTop/Singapore-Major-Fan-Consensus-Protocol">
-    <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=Singapore-Major-Fan-Consensus-Protocol&theme=default&hide_border=true" width="48%"/>
+  <a href="https://github.com/Shr1mpTop/Gastrointestinal-Diagnosis-System">
+    <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=Gastrointestinal-Diagnosis-System&theme=default&hide_border=true" width="48%"/>
   </a>
 </div>
 
