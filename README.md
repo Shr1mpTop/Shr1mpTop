@@ -141,8 +141,8 @@
   <a href="https://github.com/Shr1mpTop/Fate-s_Echo">
     <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=Fate-s_Echo&theme=default&hide_border=true" width="48%"/>
   </a>
-  <a href="https://github.com/Shr1mpTop/capstone_slides_gen">
-    <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=capstone_slides_gen&theme=default&hide_border=true" width="48%"/>
+  <a href="https://github.com/Shr1mpTop/Twikk">
+    <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=Twikk&theme=default&hide_border=true" width="48%"/>
   </a>
   <a href="https://github.com/Shr1mpTop/Singapore-Major-Fan-Consensus-Protocol">
     <img src="https://github-readme-stats-weld-omega.vercel.app/api/pin/?username=Shr1mpTop&repo=Singapore-Major-Fan-Consensus-Protocol&theme=default&hide_border=true" width="48%"/>
